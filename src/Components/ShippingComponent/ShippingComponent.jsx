@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ShippingComponent = () => {
-  function checkOutu(e) {
+  function checkOut(e) {
     e.preventDefault();
 
   }
@@ -9,7 +9,7 @@ const ShippingComponent = () => {
   return (
     
     <div className='flex-col '>
-        <h1>ShippingComponent </h1>
+        <h1>Shipping Details </h1> <br />
         <div className=''>
             <h3 className='font'>Personal Details</h3>
             <label htmlFor="Email">Email</label>

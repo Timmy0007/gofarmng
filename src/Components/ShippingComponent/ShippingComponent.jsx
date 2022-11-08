@@ -8,26 +8,26 @@ const ShippingComponent = () => {
 
   return (
     
-    <div className='flex-col '>
-        <h1>Shipping Details </h1> <br />
+    <div className='flex-col p-10  '>
+        <h1 className='text-2xl font-normal'>Shipping Details </h1> <br />
         <div className=''>
             <h3 className='font'>Personal Details</h3>
-            <label htmlFor="Email">Email</label>
-            <input type="text" placeholder='Enter email address' required  /> <br />
-            <label htmlFor="p-number">Phone Number</label>
-            <input type="number" placeholder='Enter Phone number' required  /><br />
+            <label className='' htmlFor="Email">Email</label>
+            <input className='' type="text" placeholder='Enter email address' required  /> <br />
+            <label className='' htmlFor="p-number">Phone Number</label>
+            <input className='' type="number" placeholder='Enter Phone number' required  /><br />
 
         </div>
-          <section>
-            <h3>Shipping Details</h3>
-                  <label htmlFor="HouseAdd">House Address</label>
-                  <input type="text" placeholder='Enter address' required />
-                  <label htmlFor="Zipcode">Zipcode</label>
-                  <input type="number"  />
-                  <label htmlFor="city">City</label>
-                  <input type="text" required />
-                  <label htmlFor="country">Country</label>
-                      <select name="country" id="country">
+          <section className=''>
+            <h3 className=''>Shipping Details</h3>
+                  <label className='' htmlFor="HouseAdd">House Address</label>
+                  <input className='' type="text" placeholder='Enter address' required />
+                  <label className='' htmlFor="Zipcode">Zipcode</label>
+                  <input className='' type="number"  />
+                  <label className='' htmlFor="city">City</label>
+                  <inpu className=''t type="text" required />
+                  <label className='' htmlFor="country">Country</label>
+                      <select className='' name="country" id="country">
 
                           <option value="Ghana">Ghana</option>
                           <option value="kenya">Kenya</option>

@@ -1,0 +1,181 @@
+.Signupp{
+    margin-top: 60px;
+    margin-left: 350px;
+    width: 550px;
+    height: 920px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.16);
+    border-radius: 16px;
+    margin-bottom: 60px;
+    
+}
+
+.Signup{
+    padding-top: 40px;
+    margin-left: 70px;
+}
+
+.signing{
+    width: 395px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.sign{
+    width: 256px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 24px;
+    color: #344054;
+    text-align: center;
+    
+}
+
+.hr1{
+    margin-top: 20px;
+    width: 170.5px;
+    height: 0px;
+}
+
+.hr2{
+    margin-top: 20px;
+    width: 170.5px;
+    height: 0px;
+}
+
+.orhr{
+    margin-top: 20px;
+    display: flex;
+}
+
+.or{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30.5px;
+    height: 0px;
+    font-weight: 500;
+}
+
+.emailad, .fn{
+    margin-top: 40px;
+}
+
+.email, .fulllname{
+    width: 134px;
+    height: 18px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+}
+
+#emaila, #name{
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 395px;
+    height: 70px;
+    background: #F4F4F4;
+    border: 0.5px solid rgba(17, 17, 17, 0.3);
+    border-radius: 8px;
+}
+
+.passw, .conf{
+    margin-top: 40px;
+}
+
+.password, .confp{
+    width: 134px;
+    height: 18px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;   
+}
+
+#passwordinp, #confinp{
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 395px;
+    height: 70px;
+    background: #F4F4F4;
+    border: 0.5px solid rgba(17, 17, 17, 0.3);
+    border-radius: 8px;   
+}
+
+.DS{
+    display: flex;
+}
+
+#checkbox{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.agree{
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 411px;
+    height: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #888888;
+}
+
+.signupb{
+    width: 395px;
+    height: 49px;
+    background: #149C08;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.signupp{
+    width: 193px;
+    height: 17px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 20px;
+    color: #149C08;
+}
+
+.already{
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    width: 250px;
+    height: 17px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #888888;
+}
+
+.Asignin{
+    font-weight: 550;
+    margin-left: 5px;
+    color: green;
+}

@@ -7,7 +7,7 @@
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.16);
     border-radius: 16px;
     margin-bottom: 60px;
-    
+
 }
 
 .Signin{
@@ -44,7 +44,6 @@
 
 .hr1{
     margin-top: 20px;
-    background-color: red;
     width: 170.5px;
     height: 0px;
 }
@@ -52,7 +51,6 @@
 .hr2{
     margin-top: 20px;
     width: 170.5px;
-    background-color: red;
     height: 0px;
 }
 

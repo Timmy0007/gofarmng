@@ -1,7 +1,11 @@
 import React from 'react'
 import './signup.css'
+import { Link } from 'react-router-dom'
 
 function Signup() {
+  const signin = () => {
+    alert('Signin succesful')
+}
   return (
     <div className='Signupp'>
       <div className="Signup">
@@ -33,10 +37,10 @@ function Signup() {
       <input type="checkbox"/>
       <p className='agree'>I agree to GoFarmNg terms of service and privacy policy</p>
       </div>
-      <button className='signupb'>Sign Up</button>
+      <button className='signupb' onSubmit={signin}>Sign Up</button>
       <div className='already'>
         <p className='already1'>Already have an account?</p>
-        <p className='Asignin'>Sign In</p>
+        <Link className='Asignin' to='/'>Sign In</Link>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<OrderSummary />}>
           {/* <Route index element={<Home />} /> */}
           <Route path="shipping-details" element={<ShippingComponent />} />
-          {/* <Route path="contact" element={<Contact />} />
+                  {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

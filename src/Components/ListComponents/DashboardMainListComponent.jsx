@@ -1,32 +1,31 @@
-import React from 'react'
+import React  from 'react'
 import DashboardIcon from '../../assets/dashboard-icon.png'
 import FavouriteIcon from '../../assets/heart.png'
 import TrackOrderIcon  from '../../assets/add-circle.png'
 import OrderHistoryIcon from '../../assets/keyboard.png'
-import SettingsIcon from '../../assets/settings-2.png'
-import HelpIcon from '../../assets/help.png'
+import SettingsIcon from '../../assets/setting-2.png'
+import helpIcon from '../../assets/help.png'
 import '../ListComponents/DashboardMainListComponent.css'
+// import DashboardList from '../ListComponents/DashboardList'
 
 const DashboardMainListComponent = () => {
     const listitems = [
-       {img1: DashboardIcon,text: 'Dashboard' },
-       {img1: FavouriteIcon, text: 'Favorite List'},
-       {img1: TrackOrderIcon, text: 'Track Order'},
-       {img1: OrderHistoryIcon, text: 'Order History'},
-       {img1: SettingsIcon, text: 'Settings'},
-       {img1: HelpIcon, text: 'Help'}
+       {img: DashboardIcon,content: 'Dashboard' },
+       {img: FavouriteIcon, content: 'Favorite List'},
+       {img: TrackOrderIcon, content: 'Track Order'},
+       {img: OrderHistoryIcon, content: 'Order History'},
+       {img: SettingsIcon, content: 'Settings'},
+       {img: helpIcon, content: 'Help'},
       
     ]
   return (
    
         <section>
             <h1>GoFarmNg</h1>
-            <div className='dashboardlist'>
-                <ul>
-                   {listitems.map((item) => 
-                   <li className='dashboardList'>${item.img1} &{item.text}</li>
-                   )}
-                </ul>
+            <div>{
+              listitems.map((item) => (<div className='sidebar'>{item.img} {item.content}</div>) )
+              
+              }
             </div>
         </section>
    

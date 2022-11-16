@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ShippingComponent = () => {
-  function checkOutu(e) {
+  // function checkOutu(e) {
     e.preventDefault();
 
   }

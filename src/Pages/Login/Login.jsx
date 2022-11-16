@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Form, Link } from 'react-router-dom'
 import './login.css'
 
 function Login() {
@@ -14,16 +14,17 @@ function Login() {
         <p className='or'>or</p>
         <hr className='hr2'/>
         </div>
-        <div className='emailad'>
-      <p className='email'>Email Address</p>
-      <input id='emaila' type="text" name="email" placeholder="example@gmail.com"/>
-      </div>
-      <div className='passw'>
-      <p className='password'>Password</p>
-      <input type="text" id='passwordinp' name="password" placeholder="enter password"/>
-      </div>
+        <form>
+      <label>
+        <p className='email'>Email Address</p>
+      <input id='emailas' type="email" name="email" placeholder="example@gmail.com" required/>
+      </label>
+      <label>
+        <p className='password'>Password</p>
+      <input type="password" id='passwordinp' name="password" placeholder="enter password" required/>
+      </label>
       <div className='rem'>
-        <input id='checkbox' type="checkbox"/>
+        <input id='checkbox' type="checkbox" required/>
       <p className='remember'>Remember me</p>
       <Link className='forgot' to='/Forgot'>Forgot Password</Link>
       </div>
@@ -31,8 +32,8 @@ function Login() {
       <div className='DS'>
       <p className='dont'>Don't have an account?</p>
       <Link className='signupp' to='/SignUp'>Signup</Link>
-      
         </div>
+        </form>
       </div>
     </div>
   )

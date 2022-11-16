@@ -2,14 +2,18 @@ import React from 'react'
 import './forgot.css'
 import { Link } from 'react-router-dom'
 
+
+
 function Forgot() {
   return (
     <div className='Forgot'>
       <div className='forgot1'>
-      <div className='emailad'>
+      <form>
+      <label>
       <p className='email'>Email Address</p>
-      <input type="text" id='emaila' name="email" placeholder="tim@gmail.com"/>
-      </div>
+      <input type="email" id='emailf' name="email" placeholder="tim@gmail.com"/>
+      </label>
+      </form>
       <p className='resetpass'>A password reset link would be sent to your email </p>
       <button className='signupb'>Continue</button>
       <Link className='back' to='/'> Back to Sign In</Link>

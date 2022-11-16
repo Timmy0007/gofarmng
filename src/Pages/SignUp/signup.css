@@ -54,7 +54,7 @@
     height: 0px;
 }
 
-.orhr{
+.Horizontal{
     margin-top: 20px;
     display: flex;
 }
@@ -65,10 +65,6 @@
     width: 30.5px;
     height: 0px;
     font-weight: 500;
-}
-
-.emailad, .fn{
-    margin-top: 40px;
 }
 
 .email, .fulllname{
@@ -82,21 +78,18 @@
     color: #111111;
 }
 
-#emaila, #name{
+#emailad, #name{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;
-    height: 70px;
+    height: 54px;
     background: #F4F4F4;
     border: 0.5px solid rgba(17, 17, 17, 0.3);
     border-radius: 8px;
 }
 
-.passw, .conf{
-    margin-top: 40px;
-}
-
 .password, .confp{
+    margin-top: 40px;
     width: 134px;
     height: 18px;
     font-family: 'DM Sans';
@@ -111,7 +104,7 @@
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;
-    height: 70px;
+    height: 54px;
     background: #F4F4F4;
     border: 0.5px solid rgba(17, 17, 17, 0.3);
     border-radius: 8px;   

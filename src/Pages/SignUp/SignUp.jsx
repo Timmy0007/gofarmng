@@ -14,7 +14,7 @@ function Signup() {
       </div>
       <div className="orhr">
         <hr className='hr1'/>
-        <p className='or'>or</p>
+        <p className='or'>or</p> 
         <hr className='hr2'/>
         </div>
       <div className='fn'>

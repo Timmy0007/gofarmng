@@ -92,7 +92,7 @@ p.star{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:70vh;
+    height:60vh;
     align-items: flex-start;
     border-radius: 5px;
     box-shadow: 2px 5px 1px #888888;

@@ -55,3 +55,20 @@ select{
     gap: 2em;
     cursor: pointer;
 }
+.hamburger{
+    display:none;
+}
+
+/* ............Mobile responsiveness............................... */
+
+@media screen and (max-width: 768px) {
+    select, .srch {
+      display:none;
+    }
+    .icons img, .icons p{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+    }
+  }

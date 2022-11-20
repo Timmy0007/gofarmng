@@ -36,7 +36,7 @@ const ProductPage = () => {
       <div>
         <div className="productpage-container">
           <div className="nike">
-            <img src={sliderData.value} height="" width="" alt=""/>
+            <img src={sliderData.value} height="" width="1000px" alt=""/>
             <div className='flex-row'>
               {
               imgs.map((data, i)=>
@@ -56,7 +56,7 @@ const ProductPage = () => {
                 <p className="seller"> Seller: <span>The Vine Farms</span></p>
                 <p className="seller"> Categories: <span>Fruits</span></p>
               <div className="quality">
-                <p>Quality: </p>
+                <p>Quantity: </p>
                 <Increment/>
                 <Button/>
               </div>

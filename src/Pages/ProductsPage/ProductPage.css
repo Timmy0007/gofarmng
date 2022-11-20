@@ -99,3 +99,40 @@ p.star{
     border: 1px solid #888888;
     
 }
+
+/* ............Mobile responsiveness............................... */
+
+@media screen and (max-width: 768px) {
+    .productpage-container{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3em;
+     gap: 0;
+    }
+    p.text, p.seller{
+        text-align: center;
+        padding: 1em;
+        width:70%;
+    }
+    .right-text{
+        align-items: center;
+        justify-content: center;
+    }
+    .related-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin: 0; */
+    }
+    .first{
+        align-items: center;
+        justify-content: center;
+        margin-left:5em;
+    }
+    .quality{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }

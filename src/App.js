@@ -4,6 +4,7 @@ import SignUp from './Pages/SignUp/SignUp';
 import { Routes, Route, BrowserRouter} from 'react-router-dom'
 import Forgot from './Pages/Forgotpass/forgot';
 import Resetpassword from './Pages/Resetpassword/resetpassword'
+import Order from './Pages/OrderPage/order';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="SignUp" element={<SignUp/>}/>
     <Route path='Forgot' element={<Forgot/>}/>
     <Route path='Resetpassword' element={<Resetpassword/>}/>
+    <Route path='Order' element={<Order/>}/>
       </Routes>
     </BrowserRouter>
     </>

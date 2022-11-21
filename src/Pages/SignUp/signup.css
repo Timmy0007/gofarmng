@@ -67,8 +67,10 @@
     font-weight: 500;
 }
 
-.email, .fulllname{
-    width: 134px;
+.email, .fullname{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 434px;
     height: 18px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -76,6 +78,18 @@
     font-size: 16px;
     line-height: 18px;
     color: #111111;
+}
+
+.emessage{
+    margin-left: 230px;
+    width: 434px;
+    margin-top: 5px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 10px;
+    color:red;
 }
 
 #emailad, #name{

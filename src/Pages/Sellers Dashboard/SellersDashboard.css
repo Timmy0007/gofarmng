@@ -28,6 +28,11 @@ img.pro{
     padding: 10px;
     border-radius: 50%;
 }
+img.pro1{
+    background: #C2E3FF;
+    padding: 10px;
+    border-radius: 50%;
+}
 p.bold{
     font-size: 20px;
     font-weight: bolder;

@@ -23,12 +23,12 @@ const SellersDashboard = () => {
                     </div>
                 </div>
                 <div className="sum1">
-                    <img className='pro' src={receipt} alt=""/>
+                    <img className='pro1' src={receipt} alt=""/>
                     <p> Total Products
                         <p className='bold'>3000</p>
                     </p>
                     <div className="stock">
-                    <img src={line1} alt=""/>
+                    <img src={line2} alt=""/>
                     <span className='increase'>+10%</span>
                     </div>
                 </div>

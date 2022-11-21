@@ -129,7 +129,7 @@ const ShippingComponent = () => {
               <p>Sub Total: </p>
               <p>Delivery Fee:</p>
               <p>Total Amount: </p>
-              <button type="submit" onClick={checkOut}>Checkout</button>
+              {/* <button type="submit" onClick={checkOut}>Checkout</button> */}
           </section>
 
 

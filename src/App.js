@@ -1,3 +1,4 @@
+
 import './App.css';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
@@ -6,8 +7,12 @@ import Forgot from './Pages/Forgotpass/forgot';
 import Resetpassword from './Pages/Resetpassword/resetpassword'
 import Order from './Pages/OrderPage/order';
 
+
+
+
 function App() {
   return (
+
     <>
     <BrowserRouter>
     <Routes>
@@ -19,6 +24,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     </>
+
   );
 }
 

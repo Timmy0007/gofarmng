@@ -4,7 +4,8 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import { Routes, Route, BrowserRouter} from 'react-router-dom'
 import Forgot from './Pages/Forgotpass/forgot';
-import Order from './Pages/Order/order';
+import Resetpassword from './Pages/Resetpassword/resetpassword'
+import Order from './Pages/OrderPage/order';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="/" element={<Login/>}/>
     <Route path="SignUp" element={<SignUp/>}/>
     <Route path='Forgot' element={<Forgot/>}/>
+    <Route path='Resetpassword' element={<Resetpassword/>}/>
     <Route path='Order' element={<Order/>}/>
       </Routes>
     </BrowserRouter>

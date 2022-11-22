@@ -67,11 +67,9 @@
     font-weight: 500;
 }
 
-.emailad{
-    margin-top: 40px;
-}
 
 .email{
+    margin-top: 40px;
     width: 134px;
     height: 18px;
     font-family: 'DM Sans';
@@ -82,7 +80,7 @@
     color: #111111;
 }
 
-#emaila{
+#emailas{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;
@@ -92,11 +90,8 @@
     border-radius: 8px;
 }
 
-.passw{
-    margin-top: 40px;
-}
-
 .password{
+    margin-top: 40px;
     width: 134px;
     height: 18px;
     font-family: 'DM Sans';
@@ -179,7 +174,7 @@
 
 }
 
-.signuppp{
+.signupp{
     width: 193px;
     height: 17px;
     font-family: 'DM Sans';

@@ -5,9 +5,9 @@ import PaymentLogo from '../../assets/card-logos.png'
 
 const ShippingComponent = () => {
   // function checkOutu(e) {
-    e.preventDefault();
+    //e.preventDefault();
 
-  }
+  
 
   return (
     

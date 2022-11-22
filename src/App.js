@@ -1,22 +1,30 @@
 
 import './App.css';
-import ShippingComponent from './Components/ShippingComponent/ShippingComponent';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import OrderSummary from './Components/ShippingComponent/OrderSummary';
-import DashboardMainListComponent from './Components/ListComponents/DashboardMainListComponent';
+import Login from './Pages/Login/Login';
+import SignUp from './Pages/SignUp/SignUp';
+import { Routes, Route, BrowserRouter} from 'react-router-dom'
+import Forgot from './Pages/Forgotpass/forgot';
+import Resetpassword from './Pages/Resetpassword/resetpassword'
+import Order from './Pages/OrderPage/order';
+
+
+
 
 function App() {
   return (
+
+    <>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<DashboardMainListComponent />}>
-          {/* <Route index element={<Home />} /> */}
-          <Route path="shipping-details" element={<ShippingComponent />} />
-                  {/* <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
-        </Route>
+    <Routes>
+    <Route path="/" element={<Login/>}/>
+    <Route path="SignUp" element={<SignUp/>}/>
+    <Route path='Forgot' element={<Forgot/>}/>
+    <Route path='Resetpassword' element={<Resetpassword/>}/>
+    <Route path='Order' element={<Order/>}/>
       </Routes>
     </BrowserRouter>
+    </>
+
   );
 }
 

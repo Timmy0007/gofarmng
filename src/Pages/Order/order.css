@@ -1,0 +1,105 @@
+.order{
+    width: 1070px;
+    margin-top: 90px;
+    margin-left: 130px;
+    box-shadow: 0px 0px 2px rgba(17, 17, 17, 0.25);
+    border-radius: 8px;
+}
+
+#MYOrder{
+    margin-top: 20px;
+}
+
+.amount{
+    padding-top: 20px;
+    width: 270px;
+    height: 22px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #353535;
+}
+
+.orderdate{
+    width: 283px;
+    height: 33px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #353535;
+}
+
+.delivery{
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+.order1, .order2, .order3, .order4, .order5{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.orders{
+    width: 156px;
+    height: 44px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #353535;
+}
+
+
+
+.view{
+    width: 176px;
+    height: 61px;
+    background: #149C08;
+    border-radius: 8px;
+}
+
+.viewtext{
+    height: 26px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.da{
+    width: 192px;
+    height: 33px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #353535;
+}
+
+.address{
+    width: 269px;
+    height: 22px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #353535;
+}
+
+.hr{
+    margin-top: 30px;
+    width: 1060px;
+    height: 0px;
+    border: 1px solid #CFCFCF;
+    transform: rotate(0.19deg);
+}

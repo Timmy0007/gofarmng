@@ -23,7 +23,7 @@ function Signup() {
       </div>
       <div className='emailad'>
       <p className='email'>Email Address</p>
-      <input type="text" id='emaila' name="email" placeholder="tim@gmail.com"/>
+      <input type="text" id='emaila' className='emails' name="email" placeholder="tim@gmail.com"/>
       </div>
       <div className='passw'>
       <p className='password'>Password</p>

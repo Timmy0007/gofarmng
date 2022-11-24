@@ -7,7 +7,8 @@ import Forgot from './Pages/Forgotpass/forgot';
 import Resetpassword from './Pages/Resetpassword/resetpassword'
 import Order from './Pages/OrderPage/order';
 import ProductView from './Pages/Sellers Dashboard/ProductView';
-import Carousel from './Components/Carousel';
+import Carousel from './Components/Carouseldiv';
+import SideBar from './Components/ShippingComponent/SideBar/SideBar';
 
 
 
@@ -26,6 +27,7 @@ function App() {
     <Route path='Order' element={<Order/>}/>
     <Route path='productview' element={<ProductView/>}/>
     <Route path='carousel' element={<Carousel/>}/>
+    <Route path='sidebar' element={<SideBar/>}/>
       </Routes>
     </BrowserRouter>
     </>

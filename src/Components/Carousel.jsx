@@ -16,9 +16,9 @@ function Carousel() {
           <h3>We sell incredibly fresh produce</h3>
           <p>Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
           <Button variant="success">Start Shopping</Button>
-          <div className=''>
+          {/* <div class>
 
-          </div>
+          </div> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>

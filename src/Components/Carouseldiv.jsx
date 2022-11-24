@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import {Carousel} from '../assets/carousel1.webp';
-import {Carousel1} from '../assets/carousel2.webp';
-import {Carousel2} from '../assets/carousel3.webp';
+import image from '../assets/carousel1.webp';
+import image1 from '../assets/carousel2.webp';
+import image2 from '../assets/carousel3.webp';
 import Slider from "react-slick";
-import "~slick-carousel/slick/slick.css"; 
-import "~slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import './Carouseldiv.css';
 
 
 export default class Carouseldiv extends Component {
@@ -14,24 +15,68 @@ export default class Carouseldiv extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 3000,
+      cssEase: "Linear"
     };
     return (
-      <div>
-        <h2> Single Item</h2>
+      <div className={{height: "80vh"}}>
         <Slider {...settings}>
+        <div>
+              
+            <img src={image} alt="Image" />
+
+            <h2 className="h2-fresh"> We sell incredibly fresh produce</h2>
+                <p className="fresh-fruits">Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
+              <button className="btn-shopping" type="submit">Start Shopping</button>
+              <div className="response-container">
+                <div >
+                    <p className="response-count">4k</p>
+                    <p className="response-details">Customers Reviews</p>
+                </div>
+                <div>
+                  <p className="response-count">100k</p>
+                  <p className="response-details">Food Itens</p>
+                </div>
+
+                <div>
+                      <p className="response-count">5k+</p>
+                      <p className="response-details">App Download</p>
+                </div>
+
+            </div>
+          </div>
+
           <div>
-            <img src={Carousel} alt="Image" />
+            <img src={image1} alt="Image" />
+
+              <h2 className="h2-fresh"> We sell incredibly fresh produce</h2>
+                <p className="fresh-fruits">Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
+              <button className="btn-shopping" type="submit">Start Shopping</button>
+              <div className="response-container">
+                <div >
+                    <p className="response-count">4k</p>
+                    <p className="response-details">Customers Reviews</p>
+                </div>
+                <div>
+                  <p className="response-count">100k</p>
+                  <p className="response-details">Food Itens</p>
+                </div>
+
+                <div>
+                      <p className="response-count">5k+</p>
+                      <p className="response-details">App Download</p>
+                </div>
+              </div>
           </div>
           <div>
-          <img src={Carousel1} alt="Image" />
+          <img src={image2} alt="Image" />
+
+
           </div>
-          <div>
-          <img src={Carousel2} alt="Image" />
-          </div>
-          {/* <div>
-          <img src={Carousel1} alt="Image" />
-          </div> */}
+         
           
         </Slider>
       </div>

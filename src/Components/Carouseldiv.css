@@ -1,0 +1,61 @@
+.h2-fresh {
+    z-index: 70;
+    position: relative;
+    top: -630px;
+    left: -60px;
+    color: white;
+    font-weight: 400;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    font-size: 32px;
+    text-align: center;
+}
+
+.fresh-fruits {
+    z-index: 70;
+    position: relative;
+    top: -590px;
+    left: 450px;
+    width: 380px;
+    color: white;
+    text-align: center;
+}
+
+.btn-shopping {
+    z-index: 70;
+    position: relative;
+    top: -547px;
+    left: 545px;
+    background-color: #149C08;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-shopping:hover {
+    background-color: white;
+    color: #149C08;
+    transition: ease-out;
+
+}
+
+.response-container {
+    display: flex;
+    position: relative;
+    top: -450px;
+    left: 477px;
+    color: white;
+    gap: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.response-count {
+    top: -450;
+    left: 493;
+}
+
+.response-details {
+    color: #149C08;
+    font-size: smaller;
+    font-style: italic;
+}

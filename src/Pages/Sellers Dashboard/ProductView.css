@@ -1,0 +1,49 @@
+/* @import 'bootstrap/dist/css/boostrap.min.css'; */
+
+
+.container {
+    width: 1020px;
+    height: 100vh;
+    margin: 20px auto;
+}
+
+
+.h2-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.h2-button-container h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+/* identical to box height */
+    color: #000000;
+}
+.image-holder {
+    display: flex;
+    gap: 5px;
+}
+.table-header {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* .table-row {
+    
+} */
+
+.btn-upload-products {
+    background: #149C08;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+}
+
+.btn-upload-products:hover {
+    background-color: white;
+    color:#149C08;
+    transition: ease-in-out;
+}

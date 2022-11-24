@@ -1,47 +1,40 @@
-import React from 'react';
-import {Carousel} from 'react-bootstrap';
+import React, { Component } from "react";
+import {Carousel} from '../assets/carousel1.webp';
+import {Carousel1} from '../assets/carousel2.webp';
+import {Carousel2} from '../assets/carousel3.webp';
+import Slider from "react-slick";
+import "~slick-carousel/slick/slick.css"; 
+import "~slick-carousel/slick/slick-theme.css";
 
-const Carouseldiv = ()  => {
-  return (
-    <Carousel>
-    <Carousel.Item interval={1000}>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=First slide&bg=373940"
-        alt="First slide"
-      />
-      <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item interval={500}>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=Second slide&bg=282c34"
-        alt="Second slide"
-      />
-      <Carousel.Caption>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=Third slide&bg=20232a"
-        alt="Third slide"
-      />
-      <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
-  </Carousel>
 
-  );
+export default class Carouseldiv extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <div>
+        <h2> Single Item</h2>
+        <Slider {...settings}>
+          <div>
+            <img src={Carousel} alt="Image" />
+          </div>
+          <div>
+          <img src={Carousel1} alt="Image" />
+          </div>
+          <div>
+          <img src={Carousel2} alt="Image" />
+          </div>
+          {/* <div>
+          <img src={Carousel1} alt="Image" />
+          </div> */}
+          
+        </Slider>
+      </div>
+    );
+  }
 }
-
-export default Carouseldiv;

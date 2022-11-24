@@ -1,10 +1,22 @@
 .sidebar-button {
-    padding: 10px;
+   
     border-radius: 0px 40px 40px 0px;;
-    background: #149C08;
+   cursor: pointer;
     display: flex;
+    gap: 20px;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
-    border: 1px solid yellowgreen;
+    padding: 15px;
+    color: white;
+    width: 200px;
+    
+}
+
+.sidebar-button:hover {
+    background: #149C08;
+    cursor: pointer;
+}
+
+.sidebar-button:active {
+    cursor: pointer;
 }

@@ -6,6 +6,11 @@ import { Routes, Route, BrowserRouter} from 'react-router-dom'
 import Forgot from './Pages/Forgotpass/forgot';
 import Resetpassword from './Pages/Resetpassword/resetpassword'
 import Order from './Pages/OrderPage/order';
+import ProductView from './Pages/Sellers Dashboard/ProductView';
+import Carousel from './Components/Carouseldiv';
+import SideBar from './Components/ShippingComponent/SideBar/SideBar';
+import Carouseldiv from './Components/Carouseldiv';
+
 
 
 
@@ -21,6 +26,9 @@ function App() {
     <Route path='Forgot' element={<Forgot/>}/>
     <Route path='Resetpassword' element={<Resetpassword/>}/>
     <Route path='Order' element={<Order/>}/>
+    <Route path='productview' element={<ProductView/>}/>
+    <Route path='carousel' element={<Carouseldiv/>}/>
+    <Route path='sidebar' element={<SideBar/>}/>
       </Routes>
     </BrowserRouter>
     </>

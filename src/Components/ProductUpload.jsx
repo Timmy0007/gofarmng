@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './ProductUpload.css'
 
 const ProductUpload = () => {
   return (
@@ -6,11 +7,11 @@ const ProductUpload = () => {
         <h2>Upload Products</h2>
         <form>
             <label htmlFor="country">Country
-                <select name="" id="">
-                <option value="ni">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+                <select name="country" id="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="Togo">togo</option>
+                <option value="kenya">Kenya</option>
+                <option value="Ghana">Ghana</option>
                 </select>
             </label>
 
@@ -40,4 +41,4 @@ const ProductUpload = () => {
   )
 }
 
-export default ProductUpload
+export default ProductUpload;

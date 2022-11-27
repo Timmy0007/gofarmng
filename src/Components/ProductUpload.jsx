@@ -1,7 +1,7 @@
 import React from 'react';
-import './ProductUpload.css'
+import './ProductUpload.css';
 
-const ProductUpload = () => {
+const ProductUpload = ( )=> {
   return (
     <div className='container'>
         <h2>Upload Products</h2>

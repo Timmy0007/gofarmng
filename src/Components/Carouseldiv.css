@@ -1,11 +1,10 @@
-.h2-fresh {
+/* .h2-fresh {
     z-index: 70;
     position: relative;
     top: -630px;
     left: -60px;
     color: white;
     font-weight: 400;
-    /* border: 2px solid red; */
     margin: 0 auto;
     font-size: 32px;
     text-align: center;
@@ -59,3 +58,110 @@
     font-size: smaller;
     font-style: italic;
 }
+ */
+
+
+
+
+.days{
+    border: 1px solid red;
+}
+
+ .carousel-text-container{
+    position: fixed;
+    font-family: 'Nunito', sans-serif;
+font-style: normal;
+font-weight: 400;
+    top: 150px;
+    left: 10%;
+    /* left: 300px; */
+}
+
+.h2-fresh {
+    color: white;
+    width: 62.64%;
+    font-weight: 700;
+font-size: 56px;
+line-height: 54px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    /* font-size: 32px; */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.fresh-fruits {
+    /* z-index: 70; */
+    /* position: relative; */
+    /* top: -590px;
+    left: 450px; */
+    /* width: 380px; */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+line-height: 22px;
+text-align: center;
+width: 46.944%;
+margin: 0 auto;
+margin-bottom: 40px;
+}
+
+.btn-shopping {
+    /* z-index: 70; */
+    /* position: relative;
+    top: -547px;
+    left: 545px; */
+    background-color: #149C08;
+    color: white;
+    border-radius: 10px;
+    padding: 13px 30px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: inherit;
+}
+.btn-shopping:hover {
+    background-color: white;
+    color: #149C08;
+    transition: ease-out;
+
+}
+
+.response-container {
+    display: flex;
+    /* position: relative;
+    top: -450px;
+    left: 477px; */
+    color: white;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.response-count {
+    font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 16px;
+}
+
+.response-details {
+    color: #149C08;
+    font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+}
+
+/* .carousel1 {
+    background-image: url('../assets/carousel1.webp');
+    height: 100vh;
+}
+.carousel2{
+    background-image: url('../assets/carousel1.webp');
+    height: 100vh;
+}
+.carousel3 {
+    background-image: url('../assets/carousel1.webp');
+    height: 100vh;
+} */

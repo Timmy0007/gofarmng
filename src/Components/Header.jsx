@@ -23,7 +23,7 @@ const Header = () => {
                 <option value="Beverages">Beverages</option>
                 <option value="Meat">Meat</option>
             </select>
-            <input className='srch' type="search"placeholder="  | Search Products..."/>
+            <input className='srch' type="search"placeholder="  Search Products..."/>
             <i class="fa fa-search"></i>
            
         </div>

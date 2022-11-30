@@ -68,7 +68,7 @@ async function logins(item) {
   //      password
   //    });
   //      localStorage.setItem('email', JSON.stringify(response));
-  //  }
+  //  } 
   return (
     <div className='loginn'>
       <div className="Signin">
@@ -79,7 +79,7 @@ async function logins(item) {
         <hr className='hr1'/>
         <p className='or'>or</p>
         <hr className='hr2'/>
-        </div>
+        </div> 
         <form onSubmit={handleSubmit}>
       <label>
         <p className='email'>Email Address <p className='emessage'>{message}</p></p>

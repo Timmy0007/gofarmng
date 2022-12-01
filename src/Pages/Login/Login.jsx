@@ -68,7 +68,7 @@ async function logins(item) {
   //      password
   //    });
   //      localStorage.setItem('email', JSON.stringify(response));
-  //  } 
+  //  }   
   return (
     <div className='loginn'>
       <div className="Signin"> 

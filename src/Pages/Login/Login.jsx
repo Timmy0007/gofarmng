@@ -74,7 +74,7 @@ async function logins(item) {
       <div className="Signin"> 
         <div className='signupg'>
       <p className="sign">Sign up with Google</p>
-      </div>
+      </div> 
       <div className="orhr">
         <hr className='hr1'/>
         <p className='or'>or</p>

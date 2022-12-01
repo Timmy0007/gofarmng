@@ -71,7 +71,7 @@ async function logins(item) {
   //  } 
   return (
     <div className='loginn'>
-      <div className="Signin">
+      <div className="Signin"> 
         <div className='signupg'>
       <p className="sign">Sign up with Google</p>
       </div>

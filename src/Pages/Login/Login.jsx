@@ -4,7 +4,7 @@ import './login.css'
 import { useState, useEffect } from "react";
 
 async function logins(item) {
-  return fetch('https://gofarmng.herokuapp.com/api/login', {
+  return fetch('https://gofarm-ng.vercel.app/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

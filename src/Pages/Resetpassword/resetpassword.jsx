@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from "react";
 
 async function reset(item) {
-  return fetch('https://gofarmng.herokuapp.com/api/reset-password/63662c5669e32c2508a58cfc/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyZW1tYW9rb2hAZ21haWwuY29tIiwiaWQiOiI2MzY2MmM1NjY5ZTMyYzI1MDhhNThjZmMiLCJpYXQiOjE2Njc2NDA1NDYsImV4cCI6MTY2NzY0MTQ0Nn0.iFbXP4UC9QKEpL5ksO2cDGRJIUciJvPJf-F_T0ZLvTs', {
+  return fetch('https://gofarm-ng.vercel.app/api/reset-password/638738baab5f54b2e65f8836/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyZW1tYW9rb2hAZ21haWwuY29tIiwiaWQiOiI2Mzg3MzhiYWFiNWY1NGIyZTY1Zjg4MzYiLCJpYXQiOjE2Njk4MDYzNDksImV4cCI6MTY2OTgwNzI0OX0.MskK4ERrB7U-eyNty2gh94DccOhJsLr3vz7xxuMv_0Q', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

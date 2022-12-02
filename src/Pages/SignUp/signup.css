@@ -67,7 +67,7 @@
     font-weight: 500;
 }
 
-.email, .firstname, .lastname, .phonenumber{
+.email, .firstname, .lastname, .phonenumber, .role{
     margin-top: 30px;
     margin-bottom: 15px;
     width: 434px;
@@ -92,7 +92,7 @@
     color:red;
 }
 
-#emailad, #firstnameinp, #lastnameinp, #number{
+#emailad, #firstnameinp, #lastnameinp, #number, #roleinp{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;

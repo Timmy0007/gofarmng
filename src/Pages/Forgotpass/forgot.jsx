@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from "react";
 
 async function forgot(item) {
-  return fetch('https://gofarmng.herokuapp.com/api/forgotpassword', {
+  return fetch('https://gofarm-ng.vercel.app/api/forgotpassword', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from "react";
 
 async function signup(item) {
-  return fetch('https://gofarmng.herokuapp.com/api/register', {
+  return fetch('https://gofarm-ng.vercel.app/api/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -105,6 +105,10 @@ useEffect(() =>{
       <label>
       <p className='phonenumber'>Phone Number</p>
       <input type="text" id='number' name="phonenumber" placeholder="Enter Phone Number" required/>
+      </label>
+      <label>
+      <p className='role'>Role(Buyer or Seller)</p>
+      <input type="text" id='roleinp' name="role" placeholder="Enter Role" required/>
       </label>
       <label>
       <p className='password'>Password</p>

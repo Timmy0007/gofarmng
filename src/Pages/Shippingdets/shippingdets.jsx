@@ -1,17 +1,20 @@
 import React from 'react'
 import './shippingdets.css'
+import apples from '../../assets/apples.png'
+import oranges from '../../assets/oranges.png'
+import tomatoes from '../../assets/tomatoes.png'
 
 const shippingdets = () => {
 
   return (
 
-    <div>
+    <div className='shippingdetails'>
     <div className='section1'>
         <div className='ship'>
         Shipping details
         </div>
         <form>
-        <p>Personal Details</p>
+        <p className='pers'>Personal Details</p>
         <div className='persdets'>
         <label>
       <p className='email'>Email Address</p>
@@ -23,15 +26,16 @@ const shippingdets = () => {
       </label>
         </div>
 
-        <div>Shipping Details</div>
-        <div className='shipdets'>
+    
+        <div className='shippingdeta'>Shipping Details</div>
         <label className='housead'>
       <p className='house'>House Address</p>
-      <input type="text" id='house' name="house" placeholder="Enter Address"/>
+      <input type="text" id='house' name="house" placeholder="Enter Address..."/>
       </label>
+      <div className='shipdets'>
       <label className='zipcode'>
       <p className='zip'>Zip code</p>
-      <input type="text" id='zip' name="zip" placeholder="Enter Addrress"/>
+      <input type="text" id='zip' name="zip" placeholder="Enter Address"/>
       </label>
       <label className='cityy'>
       <p className='city'>City</p>
@@ -43,7 +47,7 @@ const shippingdets = () => {
       </label>
       </div>
 
-        <div>Payment Detaills</div>
+        <div className='paymentdets'>Payment Detaills</div>
         <div className='payment'>
         <label className='cardnum'>
       <p className='card'>Card Number</p>
@@ -63,47 +67,70 @@ const shippingdets = () => {
 
     <div className='section2'>
     <div className='apple'>
-        <p className='fapple'>Farm fresh apple</p>
-        <p className='farmfresh'>#1000/Pcs</p>
+    <img className="appleimg" src={apples} alt='apples' />
+      <div className='fapple'>
+        <p className='farmfresh'>Farm fresh apple</p>
+        <p className='pcs'>#1000/Pcs</p>
         <p className='pc'>#3000</p>
-        <p className='pcc'>-1+</p>
-    </div>
+        </div>
+        <div className='pcc'>
+        <p>-</p>
+        <p>1</p>
+        <p>+</p>
+        </div>
+        </div>
+
     <div className='oranges'>
+    <img className="orangeimg" src={oranges} alt='oranges' />
+      <div className='foranges'>
         <p className='farmfresh'>Farm fresh oranges</p>
         <p className='pcs'>#1000/Pcs</p>
         <p className='pc'>#3000</p>
-        <p className='pcc'>-1+</p>
+        </div>
+        <div className='pcc'>
+        <p>-</p>
+        <p>1</p>
+        <p>+</p>
+        </div>
     </div>
     <div className='tomatoes'>
+    <img className="tomatoesimg" src={tomatoes} alt='tomatoes' />
+      <div className='ftomatoes'>
         <p className='farmfresh'>Farm fresh tomatoes</p>
         <p className='pcs'>#1000/Pcs</p>
         <p className='pc'>#3000</p>
-        <p className='pcc'>-1+</p>
+        </div>
+        <div className='pcc'>
+        <p>-</p>
+        <p>1</p>
+        <p>+</p>
+        </div>
     </div>
-    <p className='view'>View All</p>
+    <p className='viewa'>View All</p>
 
-    <p className='order'>Order Summary</p>
+    <p className='orders'>Order Summary</p>
+    <p className='line'></p>
     <div className='ordersum'>
     <div className='totalitem'>
-    <p>Total item</p>
-    <p>4 items</p>
+    <p className='item'>Total item</p>
+    <p className='itemnum'>4 items</p>
     </div>
     <div className='subtotal'>
-    <p>Sub Total</p>
-    <p>#12,000</p>
+    <p className='sub'>Sub Total</p>
+    <p className='price'>#12,000</p>
     </div>
     <div className='del'>
-    <p>Delivery fee</p>
-    <p>#1000</p>
+    <p className='delf'>Delivery fee</p>
+    <p className='delprice'>#1000</p>
     </div>
+    <p className='line'></p>
     <div className='totalam'>
-    <p>Total Amount</p>
-    <p>#13,000</p>
+    <p className='tot'>Total Amount</p>
+    <p className='totprice'>#13,000</p>
     </div>
     </div>
-    <button className='checkout'>Checkout</button>
+    <button className='checkout'><p id='checkout'>Checkout</p></button>
     </div>
-
     </div>
   )
 }

@@ -20,7 +20,7 @@ const shippingdets = () => {
       <p className='email'>Email Address</p>
       <input type="email" id='emailad' name="email" placeholder="Enter Email Address"/>
       </label>
-      <label>
+      <label className='pn'>
       <p className='phonenumber'>Phone Number</p>
       <input type="text" id='number' name="phonenumber" placeholder="Enter Phone Number" required/>
       </label>
@@ -30,7 +30,7 @@ const shippingdets = () => {
         <div className='shippingdeta'>Shipping Details</div>
         <label className='housead'>
       <p className='house'>House Address</p>
-      <input type="text" id='house' name="house" placeholder="Enter Address..."/>
+      <input type="text"  id='house' name="house" placeholder="Enter Address..."/>
       </label>
       <div className='shipdets'>
       <label className='zipcode'>

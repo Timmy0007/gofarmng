@@ -2,7 +2,7 @@
     margin-top: 60px;
     margin-left: 350px;
     width: 550px;
-    height: 920px;
+    height: 1100px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.16);
     border-radius: 16px;
@@ -67,7 +67,7 @@
     font-weight: 500;
 }
 
-.email, .fullname{
+.email, .firstname, .lastname, .phonenumber, .role{
     margin-top: 30px;
     margin-bottom: 15px;
     width: 434px;
@@ -92,7 +92,7 @@
     color:red;
 }
 
-#emailad, #name{
+#emailad, #firstnameinp, #lastnameinp, #number, #roleinp{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;

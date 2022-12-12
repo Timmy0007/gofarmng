@@ -1,0 +1,13 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .on,.Star-rating {
+    color:#FFD105;
+    /* font-size: 100px; */
+  }
+  .off {
+    color: #ccc;
+  }

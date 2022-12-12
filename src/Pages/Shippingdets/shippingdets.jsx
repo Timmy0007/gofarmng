@@ -1,8 +1,6 @@
 import React from 'react'
 import './shippingdets.css'
 import apples from '../../assets/apples.png'
-import oranges from '../../assets/oranges.png'
-import tomatoes from '../../assets/tomatoes.png'
 
 const shippingdets = () => {
 

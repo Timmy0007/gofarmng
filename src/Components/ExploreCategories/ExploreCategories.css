@@ -1,0 +1,28 @@
+.explore-header {
+  font-family: Nunito;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.explore-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.explore-btn1 {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 337px;
+}
+
+.btn {
+  width: 280px;
+  height: 57px;
+  padding: 12px, 50px, 10px, 50px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  color: #353535;
+  margin: 8px;
+}

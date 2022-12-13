@@ -1,0 +1,51 @@
+.subscribe-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+.subscribe-header {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #06283d;
+}
+.subscribe-paragraph {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  color: #06283d;
+}
+
+.subscribe-button {
+  background: #149c08;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* WHITE */
+
+  color: #ffffff;
+}
+
+.subscribe-icon img {
+  max-width: 100%;
+}
+
+.subscribe-input {
+  padding: 13px 20px;
+  width: 400px;
+
+  background: #e4e4e4;
+  border: none;
+}

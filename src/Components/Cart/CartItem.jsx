@@ -53,6 +53,6 @@ import { useDispatch } from 'react-redux'
                 </table>
             </article>
 
-    }
+    )}
 
     export default CartItem

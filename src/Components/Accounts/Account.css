@@ -1,0 +1,106 @@
+.header {
+  position: absolute;
+  width: 249px;
+  height: 44px;
+  left: 347px;
+  top: 102px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #353535;
+}
+.form-name {
+  position: absolute;
+  width: 1036px;
+  height: 80px;
+  left: 348px;
+  top: 177px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #353535;
+}
+
+.input-name {
+  box-sizing: border-box;
+  display: flex;
+  padding: 19px 200px 19px 16px;
+  gap: 8px;
+  position: relative;
+  width: 600px;
+  height: 54px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+.form-email {
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  left: 350px;
+  top: 281px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #353535;
+}
+
+.form-current {
+  position: absolute;
+  width: 118px;
+  height: 18px;
+  left: 348px;
+  top: 385px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #353535;
+}
+.form-new {
+  position: absolute;
+  width: 1036px;
+  height: 34px;
+  left: 348px;
+  top: 515px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-confirm {
+  position: absolute;
+  width: 1036px;
+  height: 54px;
+  left: 348px;
+  top: 619px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.btn {
+  position: absolute;
+  width: 500px;
+  height: 54px;
+  left: 400px;
+  top: 697px;
+  background: #149c08;
+  border-radius: 6px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  cursor: pointer;
+}

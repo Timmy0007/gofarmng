@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './signup.css'
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 
+async function signup(item) {
+  return fetch('https://gofarm-ng.vercel.app/api/register', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(item)
+  })
+    .then(data => data.json())
+ }
 
-function Signup() {
+export default function Signup() {
 const [password , setPassword] = useState('');
 const [confirmpassword , setConfirmpassword] = useState('');
 const [email, setEmail]= useState('')
@@ -24,6 +34,40 @@ if ( password !== confirmpassword){
   e.preventDefault(); setPmessage('Password doesnt match')
 }
 }
+
+useEffect(() =>{
+ setPmessage ('')
+}, [password, confirmpassword,]);
+
+useEffect(() =>{
+  setMessage ('')
+ }, [email]);
+
+ const handleSubmit = async e => {
+  e.preventDefault();
+  const response = await signup({
+    email,
+    password
+  })
+  localStorage.setItem('user', JSON.stringify(response['user']));
+};
+  
+
+
+// async function handleSubmit (){
+//   let item= {email, password};
+//   let result= await fetch('https://gofarmng.herokuapp.com/api/register', {
+//    method:'POST',
+//    headers:{
+//     'Content-Type': 'application/json', 
+//     'Accept': 'application/json'
+//    },
+//    body: JSON.stringify(item)
+//   })
+//  result= await result.json();
+//  console.log(result)
+//  }
+
 
 //another way of validating form password
 // function passwordconf(){
@@ -45,14 +89,26 @@ if ( password !== confirmpassword){
         <p className='or'>or</p> 
         <hr className='hr2'/>
         </div>
-        <form>
+        <form  onSubmit={handleSubmit}>
       <label>
-      <p className='fullname'>Full Name</p>
-      <input type="text" id='name' name="fullname" placeholder="Enter Full Name" required/>
+      <p className='firstname'>First Name</p>
+      <input type="text" id='firstnameinp' name="firstname" placeholder="Enter First Name" required/>
+      </label>
+      <label>
+      <p className='lastname'>Last Name</p>
+      <input type="text" id='lastnameinp' name="lastname" placeholder="Enter Last Name" required/>
       </label>
       <label>
       <p className='email'>Email Address  <p className='emessage'>{message}</p></p>
       <input type="email" id='emailad' name="email" value={email} placeholder="tim@gmail.com" onChange={handleChange}/>
+      </label>
+      <label>
+      <p className='phonenumber'>Phone Number</p>
+      <input type="text" id='number' name="phonenumber" placeholder="Enter Phone Number" required/>
+      </label>
+      <label>
+      <p className='role'>Role(Buyer or Seller)</p>
+      <input type="text" id='roleinp' name="role" placeholder="Enter Role" required/>
       </label>
       <label>
       <p className='password'>Password</p>
@@ -77,5 +133,3 @@ if ( password !== confirmpassword){
     </div>
   )
 }
-
-export default Signup

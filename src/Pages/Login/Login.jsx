@@ -14,10 +14,11 @@ async function logins(item) {
     .then(data => data.json())
  }
 
- export default  function Login() {
+ export default  function Login({loginmodal}) {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [message, setMessage]= useState('')
+
 
 
   function handleClick(e){
@@ -41,11 +42,13 @@ async function logins(item) {
    const handleSubmit = async e => {
     e.preventDefault();
     const response = await logins({
-      email,
-      password
+      password,
+      email
     })
     localStorage.setItem('user', JSON.stringify(response['user']));
   }
+
+
   //   if ('accessToken' in response) {
   //     alert("Success", response.message, "success", {
   //       buttons: false,
@@ -69,6 +72,8 @@ async function logins(item) {
   //    });   
   //      localStorage.setItem('email', JSON.stringify(response));
   //  }   
+
+  if (!loginmodal) return  null
   return (
     <div className='loginn'>
       <div className="Signin"> 

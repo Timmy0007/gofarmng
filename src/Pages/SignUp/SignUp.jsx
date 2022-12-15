@@ -16,8 +16,12 @@ async function signup(item) {
 
 export default function Signup() {
 const [password , setPassword] = useState('');
-const [confirmpassword , setConfirmpassword] = useState('');
+const [confirmPassword , setConfirmPassword] = useState('');
 const [email, setEmail]= useState('')
+const [firstname, setFirstname]= useState('')
+const [lastname, setLastname]= useState('')
+const [phoneNumber, setPhoneNumber]= useState('')
+const [role, setRole]= useState('')
 const [message, setMessage]= useState('')
 const [pmessage, setPmessage]= useState('')
 
@@ -30,14 +34,14 @@ const regEx= /[a-zA-Z0-9._%+-]+@[a-z0-9•-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
 if (!regEx.test(email)){
  e.preventDefault();  setMessage('Email is not valid')
 }
-if ( password !== confirmpassword){
+if ( password !== confirmPassword){
   e.preventDefault(); setPmessage('Password doesnt match')
 }
 }
 
 useEffect(() =>{
  setPmessage ('')
-}, [password, confirmpassword,]);
+}, [password, confirmPassword,]);
 
 useEffect(() =>{
   setMessage ('')
@@ -46,8 +50,13 @@ useEffect(() =>{
  const handleSubmit = async e => {
   e.preventDefault();
   const response = await signup({
+    firstname,
+    lastname,
+    phoneNumber,
     email,
-    password
+    password,
+    confirmPassword,
+    role
   })
   localStorage.setItem('user', JSON.stringify(response['user']));
 };
@@ -92,11 +101,11 @@ useEffect(() =>{
         <form  onSubmit={handleSubmit}>
       <label>
       <p className='firstname'>First Name</p>
-      <input type="text" id='firstnameinp' name="firstname" placeholder="Enter First Name" required/>
+      <input type="text" id='firstnameinp' name="firstname" value={firstname} placeholder="Enter First Name" required onChange={event => setFirstname(event.target.value)}/>
       </label>
       <label>
       <p className='lastname'>Last Name</p>
-      <input type="text" id='lastnameinp' name="lastname" placeholder="Enter Last Name" required/>
+      <input type="text" id='lastnameinp' name="lastname" value={lastname} placeholder="Enter Last Name" required onChange={event => setLastname(event.target.value)}/>
       </label>
       <label>
       <p className='email'>Email Address  <p className='emessage'>{message}</p></p>
@@ -104,11 +113,11 @@ useEffect(() =>{
       </label>
       <label>
       <p className='phonenumber'>Phone Number</p>
-      <input type="text" id='number' name="phonenumber" placeholder="Enter Phone Number" required/>
+      <input type="text" id='number' name="phoneNumber" value={phoneNumber} placeholder="Enter Phone Number" required onChange={event => setPhoneNumber(event.target.value)}/>
       </label>
       <label>
       <p className='role'>Role(Buyer or Seller)</p>
-      <input type="text" id='roleinp' name="role" placeholder="Enter Role" required/>
+      <input type="text" id='roleinp' name="role" value={role} placeholder="Enter Role" required onChange={event => setRole(event.target.value)}/>
       </label>
       <label>
       <p className='password'>Password</p>
@@ -117,7 +126,7 @@ useEffect(() =>{
       <label>
       <p className='confp'>Confirm Password</p>
       <p className='emessage'>{pmessage}</p>
-      <input type="password" id='confinp' name="confirm" value={confirmpassword} placeholder="enter password" minLength={4} required onChange={event => setConfirmpassword(event.target.value)}/>
+      <input type="password" id='confinp' name="confirmpassword" value={confirmPassword} placeholder="enter password" minLength={4} required onChange={event => setConfirmPassword(event.target.value)}/>
       </label>
       <div className='DS'>
       <input type="checkbox" required/>

@@ -14,7 +14,7 @@ async function logins(item) {
     .then(data => data.json())
  }
 
- export default  function Login({loginmodal}) {
+ export default  function Login({open}) {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [message, setMessage]= useState('')
@@ -61,7 +61,7 @@ async function logins(item) {
     } else {
       alert("Failed", response.message, "error");
     }
-  }
+  };
   
 
   
@@ -74,7 +74,7 @@ async function logins(item) {
   //      localStorage.setItem('email', JSON.stringify(response));
   //  }   
 
-  // if (!loginmodal) return  null
+  if (!open)  return  null;  
   return (
     <div className='loginn'>
       <div className="Signin"> 
@@ -88,12 +88,12 @@ async function logins(item) {
         </div> 
         <form onSubmit={handleSubmit}>
       <label>
-        <p className='email'>Email Address <p className='emessage'>{message}</p></p>
+        <p className='emaillabel'>Email Address <p className='emessage'>{message}</p></p>
       <input id='emailas' type="email" name="email" placeholder="example@gmail.com" value={email} onChange={handleChange} required/>
       </label>
       <label>
-        <p className='password'>Password</p>
-      <input type="password" id='passwordinp' name="password" value={password} placeholder="enter password" minLength={4} onChange={handlePasswordChange} required/>
+        <p className='passw'>Password</p>
+      <input type="password" id='passwordinpu' name="password" value={password} placeholder="enter password" minLength={4} onChange={handlePasswordChange} required/>
       </label>
       <div className='rem'>
         <input id='checkbox' type="checkbox" required/>

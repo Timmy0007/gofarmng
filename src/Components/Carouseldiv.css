@@ -68,12 +68,12 @@
 }
 
  .carousel-text-container{
-    position: fixed;
+    position: relative;
     font-family: 'Nunito', sans-serif;
-font-style: normal;
-font-weight: 400;
-    top: 150px; 
-     left: 10%; 
+    font-style: normal;
+    font-weight: 400;
+    top: -600px; 
+     left: 3%; 
     /* left: 300px; */
 }
 

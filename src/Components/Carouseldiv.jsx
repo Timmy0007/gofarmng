@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import image from '../assets/caro1.webp';
 import image1 from '../assets/caro2.webp';
 import image2 from '../assets/caro3.webp';
@@ -8,12 +8,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Carouseldiv.css';
 import Header from '../Components/Header';
+import Login from "../Pages/Login/Login";
 
 
 
-export default class Carouseldiv extends Component {
-  render() {
-    const settings = {
+export default function Carouseldiv () {
+    const settings={
       dots: true,
       infinite: true,
       speed: 500,
@@ -24,11 +24,10 @@ export default class Carouseldiv extends Component {
       autoplaySpeed: 3000,
       cssEase: "Linear"
     };
-    return (
-     
 
+    const [openLogin, setOpenLogin]= useState(false)
 
-
+    return (   
     <>
     <Header/> 
      <div className={{height: "80vh"}}>
@@ -61,9 +60,12 @@ export default class Carouseldiv extends Component {
           
         </Slider>
         <div className="carousel-text-container">
+          <div className="carouseltext">
           <h2 className="h2-fresh"> We sell incredibly fresh produce</h2>
                 <p className="fresh-fruits">Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
-              <button className="btn-shopping" type="submit">Start Shopping</button>
+              <button className="btn-shopping" onClick={ () =>setOpenLogin(true)}>Start Shopping</button>
+              <Login open={openLogin}/>
+              </div>
               <div className="response-container">
                 <div >
                     <p className="response-count">4k</p>
@@ -80,8 +82,9 @@ export default class Carouseldiv extends Component {
                 </div>
               </div>
           </div>
+     
+
       </div>
     </> 
-    );
-  }
-}
+    )
+};

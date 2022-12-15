@@ -26,7 +26,6 @@ export default function Carouseldiv () {
     };
 
     const [openLogin, setOpenLogin]= useState(false)
-
     return (   
     <>
     <Header/> 
@@ -64,7 +63,7 @@ export default function Carouseldiv () {
           <h2 className="h2-fresh"> We sell incredibly fresh produce</h2>
                 <p className="fresh-fruits">Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
               <button className="btn-shopping" onClick={ () =>setOpenLogin(true)}>Start Shopping</button>
-              <Login open={openLogin}/>
+              <Login open={openLogin} onClose={()=>setOpenLogin(false)} />
               </div>
               <div className="response-container">
                 <div >

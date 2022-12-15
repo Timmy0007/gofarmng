@@ -14,7 +14,7 @@ async function logins(item) {
     .then(data => data.json())
  }
 
- export default  function Login({open}) {
+ export default  function Login({open, onClose}) {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [message, setMessage]= useState('')
@@ -81,10 +81,11 @@ async function logins(item) {
         <div className='signupg'>
       <p className="sign">Sign up with Google</p>
       </div> 
+      <button onClick={onClose} className='x'>X</button>
       <div className="orhr">
-        <hr className='hr1'/>
-        <p className='or'>or</p>
-        <hr className='hr2'/>
+        <hr className='hrline'/>
+        <p className='orl'>or</p>
+        <hr className='hrlin'/>
         </div> 
         <form onSubmit={handleSubmit}>
       <label>

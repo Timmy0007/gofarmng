@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './signup.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { useState } from "react";
 
 async function signup(item) {
@@ -24,6 +24,7 @@ const [phoneNumber, setPhoneNumber]= useState('')
 const [role, setRole]= useState('')
 const [message, setMessage]= useState('')
 const [pmessage, setPmessage]= useState('')
+const navigate = useNavigate();
 
 const handleChange = (e)=>{
   setEmail(e.target.value);
@@ -58,7 +59,20 @@ useEffect(() =>{
     confirmPassword,
     role
   })
-  localStorage.setItem('user', JSON.stringify(response['user']));
+  if ('access_token' in response) {
+    alert("Success", response.message, "success", {
+      buttons: false,
+      timer: 2000,
+    })
+    navigate('/')
+    .then((value) => {
+      localStorage.setItem('access_token', response['access_token']);
+      localStorage.setItem('user', JSON.stringify(response['user']));
+    });
+  } else {
+    alert("Failed", response.message, "error");
+  }
+
 };
   
 

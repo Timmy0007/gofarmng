@@ -14,6 +14,7 @@ import SideBar from "./Components/ShippingComponent/SideBar/SideBar";
 import Carouseldiv from "./Components/Carouseldiv";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
+import Header from "./Components/Header";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="productview" element={<ProductView />} />
             <Route path="carousel" element={<Carouseldiv />} />
             <Route path="sidebar" element={<SideBar />} />
+            <Route path="Header" element={<Header/>} />
             <Route path="productupload" element={<ProductUpload />} />
             <Route path="productpage" element={<ProductPage />} />
           </Routes>

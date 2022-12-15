@@ -2,7 +2,7 @@
     margin-top: 60px;
     margin-left: 350px;
     width: 550px;
-    height: 1100px;
+    height: 1350px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.16);
     border-radius: 16px;
@@ -67,7 +67,7 @@
     font-weight: 500;
 }
 
-.email, .firstname, .lastname, .phonenumber, .role{
+.emaill, .firstname, .lastname, .phoneNumber, .role{
     margin-top: 30px;
     margin-bottom: 15px;
     width: 434px;
@@ -92,7 +92,7 @@
     color:red;
 }
 
-#emailad, #firstnameinp, #lastnameinp, #number, #roleinp{
+#emailad, #firstnameinp, #lastnameinp, #Number, #roleinp{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;
@@ -136,7 +136,7 @@
 
 .agree{
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top:28px;
     width: 411px;
     height: 32px;
     font-family: 'DM Sans';
@@ -182,7 +182,8 @@
 }
 
 .Asignin{
+    margin-top: 15px;
     font-weight: 550;
-    margin-left: 5px;
+    margin-left: 10px;
     color: green;
 }

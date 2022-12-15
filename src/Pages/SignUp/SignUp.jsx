@@ -122,12 +122,12 @@ useEffect(() =>{
       <input type="text" id='lastnameinp' name="lastname" value={lastname} placeholder="Enter Last Name" required onChange={event => setLastname(event.target.value)}/>
       </label>
       <label>
-      <p className='email'>Email Address  <p className='emessage'>{message}</p></p>
+      <p className='emaill'>Email Address  <p className='emessage'>{message}</p></p>
       <input type="email" id='emailad' name="email" value={email} placeholder="tim@gmail.com" onChange={handleChange}/>
       </label>
       <label>
-      <p className='phonenumber'>Phone Number</p>
-      <input type="text" id='number' name="phoneNumber" value={phoneNumber} placeholder="Enter Phone Number" required onChange={event => setPhoneNumber(event.target.value)}/>
+      <p className='phoneNumber'>Phone Number</p>
+      <input type="text" id='Number' name="phoneNumber" value={phoneNumber} placeholder="Enter Phone Number" required onChange={event => setPhoneNumber(event.target.value)}/>
       </label>
       <label>
       <p className='role'>Role(Buyer or Seller)</p>

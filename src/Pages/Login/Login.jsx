@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './login.css'
 import { useState, useEffect } from "react";
 
@@ -18,7 +18,7 @@ async function logins(item) {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [message, setMessage]= useState('')
-
+  const navigate = useNavigate();
 
 
   function handleClick(e){
@@ -26,6 +26,9 @@ async function logins(item) {
     if (!regEx.test(email)){
      e.preventDefault();  setMessage('Email is not valid')
     }
+    
+
+
   }
   const handleChange = (e)=>{
     setEmail(e.target.value);
@@ -44,24 +47,22 @@ async function logins(item) {
     const response = await logins({
       password,
       email
-    })
-    localStorage.setItem('user', JSON.stringify(response['user']));
+    });
+    if ('access_token' in response) {
+      alert("Success", response.message, "success", {
+        buttons: false,
+        timer: 2000,
+      })
+      navigate('/SignUp')
+      .then((value) => {
+        localStorage.setItem('access_token', response['access_token']);
+        localStorage.setItem('user', JSON.stringify(response['user']));
+      });
+    } else {
+      alert("Failed", response.message, "error");
+    }
   }
-
-
-  //   if ('accessToken' in response) {
-  //     alert("Success", response.message, "success", {
-  //       buttons: false,
-  //       timer: 2000,
-  //     })
-  //     .then((value) => {
-  //       localStorage.setItem('accessToken', response['accessToken']);
-  //       localStorage.setItem('user', JSON.stringify(response['user']));
-  //     });
-  //   } else {
-  //     alert("Failed", response.message, "error");
-  //   }
-  // }
+  
 
   
   //   const handleSubmit = async e => {
@@ -73,7 +74,7 @@ async function logins(item) {
   //      localStorage.setItem('email', JSON.stringify(response));
   //  }   
 
-  if (!loginmodal) return  null
+  // if (!loginmodal) return  null
   return (
     <div className='loginn'>
       <div className="Signin"> 

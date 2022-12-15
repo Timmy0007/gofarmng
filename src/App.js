@@ -19,27 +19,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="SignUp" element={<SignUp />} />
-          <Route path="Forgot" element={<Forgot />} />
-          <Route path="Resetpassword" element={<Resetpassword />} />
-          <Route path="Order" element={<Order />} />
-          <Route path="Shippingdets" element={<Shippingdets />} />
-
-          <Routes>
+         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="SignUp" element={<SignUp />} />
             <Route path="Forgot" element={<Forgot />} />
             <Route path="Resetpassword" element={<Resetpassword />} />
             <Route path="Order" element={<Order />} />
+            <Route path="Shippingdets" element={<Shippingdets />} />
             <Route path="productview" element={<ProductView />} />
             <Route path="carousel" element={<Carouseldiv />} />
             <Route path="sidebar" element={<SideBar />} />
             <Route path="productupload" element={<ProductUpload />} />
             <Route path="productpage" element={<ProductPage />} />
           </Routes>
-        </Routes> */}
       </BrowserRouter>
     </>
   );

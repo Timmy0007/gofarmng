@@ -53,7 +53,7 @@ async function logins(item) {
         buttons: false,
         timer: 2000,
       })
-      navigate('/SignUp')
+      navigate('/')
       .then((value) => {
         localStorage.setItem('access_token', response['access_token']);
         localStorage.setItem('user', JSON.stringify(response['user']));

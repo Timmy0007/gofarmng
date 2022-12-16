@@ -14,7 +14,7 @@ import SideBar from "./Components/ShippingComponent/SideBar/SideBar";
 import Carouseldiv from "./Components/Carouseldiv";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
-import Header from "./Components/Header";
+import Home from './Pages/Homepage'
 
 function App() {
   return (

@@ -8,6 +8,7 @@ import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
   return (
+    <>
     <div>
         <Carousel />
         <Section />
@@ -16,6 +17,7 @@ const Home = () => {
         <Subscribe />
         <Footer />
     </div>
+    </>
   )
 }
 

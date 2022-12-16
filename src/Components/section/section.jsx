@@ -2,7 +2,7 @@ import React from "react";
 import star from "../images/star.svg";
 import successful from "../images/successful-mobile.svg";
 import delivery from "../images/delivery.svg";
-import "./Section.css";
+import "./section.css";
 
 function Section() {
   return (

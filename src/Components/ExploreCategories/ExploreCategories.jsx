@@ -4,25 +4,27 @@ import "./ExploreCategories.css";
 function ExploreCategories() {
   return (
     <>
+    <div className="explo">
       <h3 className="explore-header">Explore Popular Categories</h3>
       <div className="explore-btn">
-        <button className="btn">Cereal Crops</button>
-        <button className="btn">Fruits</button>
-        <button className="btn">Tubers</button>
-        <button className="btn">Juices</button>
+        <button className="ebtn">Cereal Crops</button>
+        <button className="ebtn">Fruits</button>
+        <button className="ebtn">Tubers</button>
+        <button className="ebtn">Juices</button>
       </div>
 
       <div className="explore-btn">
-        <button className="btn">Bakery</button>
-        <button className="btn">Spices</button>
-        <button className="btn">Sea Foods</button>
-        <button className="btn">Vegetables</button>
+        <button className="ebtn">Bakery</button>
+        <button className="ebtn">Spices</button>
+        <button className="ebtn">Sea Foods</button>
+        <button className="ebtn">Vegetables</button>
       </div>
 
       <div className="explore-btn1">
-        <button className="btn">Diary</button>
-        <button className="btn">Beverages</button>
-        <button className="btn">Meat</button>
+        <button className="ebtn">Diary</button>
+        <button className="ebtn">Beverages</button>
+        <button className="ebtn">Meat</button>
+      </div>
       </div>
     </>
   );

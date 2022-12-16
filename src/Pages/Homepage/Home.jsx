@@ -5,6 +5,8 @@ import Explore from '../../Components/ExploreCategories/ExploreCategories'
 import Newest from '../../Components/NewestArrival/Newestarrival'
 import Subscribe from '../../Components/SubscribeNewsLetter/SubscribeNewsLetter'
 import Footer from '../../Components/Footer/Footer'
+import TopSellingProduct  from '../../Components/TopSelingProduct/TopSellingProduct'
+
 
 const Home = () => {
   return (
@@ -13,6 +15,7 @@ const Home = () => {
         <Carousel />
         <Section />
         <Explore />
+        <TopSellingProduct/>
         <Newest />
         <Subscribe />
         <Footer />

@@ -1,11 +1,11 @@
 import React from "react";
-import banana from "../images/banana.svg";
-import yam from "../images/yam.svg";
-import carrot from "../images/carrot.svg";
-import pepper from "../images/pepper.svg";
-import stars from "../images/stars.svg";
-import love from "../images/love.svg";
-import whiteLove from "../images/whiteLove.svg";
+import banana from "../../assets/banana2.png";
+import yam from "../../assets/yam.png";
+import carrot from "../../assets/carrot.png";
+import pepper from "../../assets/pepper.png";
+import stars from "../../assets/star.png";
+import heart from "../../assets/heart.png";
+import whiteLove from "../../assets/whiteLove.png";
 import "./TopSellingProduct.css";
 
 function TopSellingProduct() {
@@ -15,7 +15,7 @@ function TopSellingProduct() {
       <div className="fruits">
         <div className="banana">
           <div className="top-img">
-            <img className="icon" src={love} alt="Love" />
+            <img className="icon" src={heart} alt="Love" />
             <img className="img" src={banana} alt="Banana" />
           </div>
 

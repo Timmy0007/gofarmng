@@ -53,7 +53,7 @@ async function logins(item) {
         buttons: false,
         timer: 2000,
       })
-      navigate('/')
+      navigate('/SellersDashboard')
       .then((value) => {
         localStorage.setItem('access_token', response['access_token']);
         localStorage.setItem('user', JSON.stringify(response['user']));
@@ -90,11 +90,11 @@ async function logins(item) {
         <form onSubmit={handleSubmit}>
       <label>
         <p className='emaillabel'>Email Address <p className='emessage'>{message}</p></p>
-      <input id='emailas' type="email" name="email" placeholder="example@gmail.com" value={email} onChange={handleChange} required/>
+      <input id='emailas' type="email" name="email" placeholder="Example@gmail.com" value={email} onChange={handleChange} required/>
       </label>
       <label>
         <p className='passw'>Password</p>
-      <input type="password" id='passwordinpu' name="password" value={password} placeholder="enter password" minLength={4} onChange={handlePasswordChange} required/>
+      <input type="password" id='passwordinpu' name="password" value={password} placeholder="Enter password" minLength={4} onChange={handlePasswordChange} required/>
       </label>
       <div className='rem'>
         <input id='checkbox' type="checkbox" required/>

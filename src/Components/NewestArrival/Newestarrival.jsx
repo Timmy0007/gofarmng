@@ -2,7 +2,8 @@ import React from "react";
 import coconnut from "../../assets/coconut.png";
 import watermelon from "../../assets/watermelon.png";
 import pineapple from "../../assets/pineapple.png";
-import whiteLove from "../../assets/whitelove.png";
+import heart from "../../assets/heart.png";
+import whiteLove from "../../assets/whiteLove.png";
 import pawpaw from "../../assets/pawpaw.png";
 import stars from "../../assets/star.png";
 import "./NewestArrival.css";
@@ -14,7 +15,7 @@ function NewestArrival() {
       <div className="newest-fruits">
         <div className="newest-fruit">
           <div className="newest-img">
-            <img className="icon" src={whiteLove} alt="Love" />
+            <img className="icon" src={heart} alt="Love" />
             <img src={coconnut} alt="Coconut" />
           </div>
           <div>

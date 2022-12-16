@@ -59,7 +59,7 @@ useEffect(() =>{
     confirmPassword,
     role
   })
-  if ('access_token' in response) {
+  {
     alert("Success", response.message, "success", {
       buttons: false,
       timer: 2000,
@@ -69,8 +69,6 @@ useEffect(() =>{
       localStorage.setItem('access_token', response['access_token']);
       localStorage.setItem('user', JSON.stringify(response['user']));
     });
-  } else {
-    alert("Failed", response.message, "error");
   }
 
 };

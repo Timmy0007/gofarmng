@@ -1,6 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import Banana from "../../assets/banana2.png";
 import Bana from "./../../assets/banna.PNG";
 import bannna from "./../../assets/bannna.PNG";
 import "./ProductPage.css";
@@ -49,7 +48,7 @@ const ProductPage = () => {
                   width="80"
                 />
               </div>
-            ))}
+            ))};
           </div>
         </div>
         <div className="right-text">

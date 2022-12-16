@@ -59,6 +59,18 @@ select{
     display:none;
 }
 
+.bell{
+    margin-top: 20px;
+    width: 16.04px;
+    Height: 16.87px
+}
+
+.cart{
+    margin-top: 20px;
+    width: 16.04px;
+    Height: 16.87px
+}
+
 /* ............Mobile responsiveness............................... */
 
 @media screen and (max-width: 768px) {

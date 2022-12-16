@@ -1,3 +1,7 @@
+.explo{
+  margin-top: -170px;
+}
+
 .explore-header {
   font-family: Nunito;
   font-size: 32px;
@@ -16,7 +20,7 @@
   margin-right: 337px;
 }
 
-.btn {
+.ebtn {
   width: 280px;
   height: 57px;
   padding: 12px, 50px, 10px, 50px;
@@ -25,4 +29,7 @@
   cursor: pointer;
   color: #353535;
   margin: 8px;
+}
+.ebtn:hover, active{
+  background-color: orange;
 }

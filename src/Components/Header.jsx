@@ -28,8 +28,8 @@ const Header = () => {
            
         </div>
         <div className="icons">
-            <img src={bell} alt=""/>
-            <img src={cart} alt=""/>
+            <img className='bell' src={bell} alt=""/>
+            <img className='cart' src={cart} alt=""/>
             <p>User Icon</p>
             <p>Account Balance</p>
            {/* <div className="hamburger"><Hamburger/></div> */}

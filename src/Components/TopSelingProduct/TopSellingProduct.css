@@ -10,6 +10,7 @@
 .fruits {
   display: flex;
   justify-content: space-around;
+  
 }
 .banana {
   width: 282px;

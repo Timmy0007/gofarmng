@@ -1,10 +1,10 @@
 import React from "react";
-import coconnut from "../images/coconnut.svg";
-import watermelon from "../images/watermelon.svg";
-import pineapple from "../images/pineapple.svg";
-import whiteLove from "../images/whiteLove.svg";
-import pawpaw from "../images/pawpaw.svg";
-import stars from "../images/stars.svg";
+import coconnut from "../../assets/coconut.png";
+import watermelon from "../../assets/watermelon.png";
+import pineapple from "../../assets/pineapple.png";
+import whiteLove from "../../assets/whitelove.png";
+import pawpaw from "../../assets/pawpaw.png";
+import stars from "../../assets/star.png";
 import "./NewestArrival.css";
 
 function NewestArrival() {

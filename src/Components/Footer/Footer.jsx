@@ -1,10 +1,10 @@
 import React from "react";
-import app from "../images/appstore.svg";
-import google from "../images/googleplay.svg";
-import facebook from "../images/facebook.svg";
-import insta from "../images/insta.svg";
-import twitt from "../images/twitter.svg";
-import face from "../images/face.svg";
+import app from "../../assets/googleapple.png";
+import google from "../../assets/path16.png";
+import facebook from "../../assets/facebook.png";
+import insta from "../../assets/instagram.png";
+import twitt from "../../assets/twitter.png";
+import face from "../../assets/whitefacebook.png";
 import "./Footer.css";
 
 function Footer() {

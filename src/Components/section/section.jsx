@@ -1,7 +1,7 @@
 import React from "react";
-import star from "../images/star.svg";
-import successful from "../images/successful-mobile.svg";
-import delivery from "../images/delivery.svg";
+import star from "../../assets/star.png";
+import payment from "../../assets/payment.png";
+import delivery from "../../assets/delivery.png";
 import "./section.css";
 
 function Section() {
@@ -17,7 +17,7 @@ function Section() {
           </p>
         </div>
         <div className="payment">
-          <img className="text-img" src={successful} alt="safe payment" />
+          <img className="text-img" src={payment} alt="safe payment" />
           <h4 className="text-h4">Safe Payment</h4>
           <p className="text-para">
             consectetur adipiscing elit duis tristique sollicitudin nibh sit

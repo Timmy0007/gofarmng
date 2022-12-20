@@ -16,7 +16,7 @@ import Guava from "../../assets/Guava.png";
 import Pawpaw from "../../assets/Guava.png";
 // import Pawpaw from "../../assets/Pawpaw.png"
 import Carrot from "../../assets/carrot.png";
-// import Card from "../../Components/Card"
+import ProductCardDetails from "../../Components/ProductCardDetails/ProductCardDetails";
 
 const ProductPage = () => {
   const imgs = [
@@ -31,11 +31,53 @@ const ProductPage = () => {
     setSliderData(slider);
   };
 
+  const [data]=useState([{
+    image:BreadFruit,
+    heading: 'Fresh Bread Fruit',
+    prices: '#1000',
+  },
+  {
+    image:Orange,
+    heading: 'Fresh Orange',
+    prices: '#1000',
+  },
+  {
+    image:Apple,
+    heading: 'Fresh Apple',
+    prices: '#1000',
+  },
+  {
+    image:Golden,
+    heading: 'Fresh Guava',
+    prices: '#1000',
+  },
+  {
+    image:Tomato,
+    heading: 'Fresh Tomato',
+    prices: '#1000',
+  },
+  {
+    image:Carrot,
+    heading: 'Fresh Bread Fruit',
+    prices: '#1000',
+  },
+  {
+    image:Guava,
+    heading: 'Fresh Guava',
+    prices: '#1000',
+  },
+  {
+    image:Pawpaw,
+    heading: 'Fresh PawPaw',
+    prices: '#1000',
+  }
+  ])
+
   return (
     <div>
       <div className="productpage-container">
         <div className="nike">
-          <img src={sliderData.value} height="" width="1000px" alt="" />
+          <img src={sliderData.value} height="" width="500px" alt="" />
           <div className="flex-row">
             {imgs.map((data, i) => (
               <div className="thumbnails">
@@ -80,141 +122,14 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
-      <div className="related">
-        <h3>Related Products</h3>
-        <div className="related-container">
-          <div className="first">
-            <img className="bck" src={BreadFruit} alt="" />
-            <p className="name">Fresh Bread Fruit</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Orange} alt="" />
-            <p className="name">Fresh Orange</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Apple} alt="" />
-            <p className="name">Fresh Apple</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Golden} alt="" />
-            <p className="name">Fresh Guava</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-        </div>
-        <div className="related-container">
-          <div className="first">
-            <img className="bck" src={Tomato} alt="" />
-            <p className="name"> Fresh Tomato</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Carrot} alt="" />
-            <p className="name">Fresh Carrot</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Guava} alt="" />
-            <p className="name">Fresh Guava</p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-          <div className="first">
-            <img className="bck" src={Pawpaw} alt="" />
-            <p className="name">Fresh Pawpaw </p>
-            <p className="star">
-              <Star />
-            </p>
-            <p className="name">
-              #1,000 <span>/Kg</span>
-            </p>
-            <p className="star">
-              <Increment />
-            </p>
-            <p className="star">
-              <Button />
-            </p>
-          </div>
-        </div>
+      <h3 className="rel">Related Products</h3>
+      <div className="productcarddetailscontainer">
+        {data.map((item)=>(
+                <ProductCardDetails image={item.image} heading={item.heading} prices={item.prices}/>
+              )
+              )}
       </div>
+     
     </div>
   );
 };

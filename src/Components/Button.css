@@ -1,13 +1,20 @@
 .btn-1{
     background:#149C08;
-    width:200px;
+    width:auto;
     border-radius: 5px;
     font-size: 18px;
     padding: 5px;
+    padding-left:20px;
+    padding-right:20px;
     border: none;
     outline: none;
 }
- a button {
+  button a{
     color:#fff;
     border: none;
+    text-align:center;
+    text-decoration: none;
+}
+button a:hover{
+    color:#fff;
 }

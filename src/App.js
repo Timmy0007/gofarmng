@@ -14,13 +14,18 @@ import SideBar from "./Components/ShippingComponent/SideBar/SideBar";
 import Carouseldiv from "./Components/Carouseldiv";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
-import Home from './Pages/Homepage'
+import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
+import Header from "./Components/Header"
+// import Home from './Pages/Homepage'
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        {/* <Routes>
+    <Header/>
+    <ProductPage/>
+    <SellersDashboard/>
+      {/* <BrowserRouter>
+        <Routes>
           <Route path="/" element={<Login />} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="Forgot" element={<Forgot />} />
@@ -40,8 +45,8 @@ function App() {
             <Route path="productupload" element={<ProductUpload />} />
             <Route path="productpage" element={<ProductPage />} />
           </Routes>
-        </Routes> */}
-      </BrowserRouter>
+        </Routes>
+      </BrowserRouter> */}
     </>
   );
 }

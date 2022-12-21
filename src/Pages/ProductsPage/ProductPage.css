@@ -13,7 +13,7 @@
 .flex-row{
     display: flex;
     justify-content: center;
-    padding-top: 8em;
+    padding-top: 1em;
     gap:1em;
 }
 .right-text h5{
@@ -69,8 +69,17 @@ p.text, p.seller{
     gap:2em;
     /* width: 1300px; */
     /* margin */
-    
- 
+}
+.rat{
+    display: flex;
+}
+.liky{
+    position: absolute;
+    left: 420px;
+    top: 20px;
+}
+.nike{
+    position: relative;
 }
 p.name{
     font-size:20px;
@@ -85,9 +94,11 @@ img.bck{
     border-radius: 10px;
     padding-left: 4em;
 }
-p.star{
-    padding-left: 4em;
-}
+ .center-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 .first{
     display: flex;
     flex-direction: column;
@@ -98,6 +109,20 @@ p.star{
     box-shadow: 2px 5px 1px #888888;
     border: 1px solid #888888;
     
+}
+.productcarddetailscontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top:3em;
+    padding-bottom: 2em;
+}
+h3.rel{
+    font-weight: bolder;
+    padding-left: 3em;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* ............Mobile responsiveness............................... */

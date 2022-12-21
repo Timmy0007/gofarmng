@@ -15,11 +15,13 @@ import Carouseldiv from "./Components/Carouseldiv";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
 import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
+import Header from "./Components/Header"
 // import Home from './Pages/Homepage'
 
 function App() {
   return (
     <>
+    <Header/>
     <ProductPage/>
     <SellersDashboard/>
       {/* <BrowserRouter>

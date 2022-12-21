@@ -126,18 +126,22 @@ tr td{
 .recently{
     border: 1px solid #e9e5e5;
     border-radius: 10px;
-    margin-top: 3em;
-    width: 86%;
+    width: 100%;
 }
-.view{
+.vi{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    text-decoration:none;
 }
-.view a {
-    color: #FFF;
-    /* font-size: bolder; */
-    padding: 5px;
+a.viewall{
+    color:#149C08;
+    background: none;
+    text-decoration: none;
+}
+a.viewall:hover{
+    color:#149C08;
 }
 .balance{
     background: #149C08;
@@ -147,15 +151,17 @@ tr td{
     box-shadow: #e9e5e5;
 }
 .trx-history{
-margin-right:5em;
-border:1px solid #e9e5e5;
-padding: 2em;
+    margin-right:5em;
+    border:1px solid #e9e5e5;
+    padding: 2em;
+    margin-top: 8em;
 }
 p.amount{
     font-size: 30px;
     font-weight: bolder;
     color:#ffff;
     text-align: center;
+    margin-bottom: 1em;
 
 }
 .depo-with{
@@ -194,18 +200,30 @@ p.trx{
     margin-top: 2em;
 }
 .resize{
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-left: 2em;
   border: 1px solid #e9e5e5;
   border-radius: 5px;
 }
+.line-chart {
+    width: 70%;
+}
 .circular-chart{
-    margin-top: 10px;
+ margin-top: 2em; 
+}
+.chart{
+    display: flex;
+    border-bottom:0;
 }
 .circular-chart p{
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 25px;
+ 
+}
+.view{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
  .history-column{
     display: flex;

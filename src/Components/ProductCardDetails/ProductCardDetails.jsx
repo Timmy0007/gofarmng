@@ -8,13 +8,15 @@ const ProductCardDetails = ({image, heading, prices}) => {
   return (
     <div className=".details">
         <div className="details-container">
-            <img src={image} alt="" width="250px"/>  
+            <img src={image} alt="" width="300px"/>  
             <p className='heading'>{heading}
-            <Star/></p>
+            <span className="rating"><Star/>(12)</span>
             <p className='pricing'>{prices} <small>/Kg</small>  
             <IncrementDecrement/>  
             <p className='butt'><Button/></p>
             </p>
+            </p>
+            
         </div>
         
     </div>

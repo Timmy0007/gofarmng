@@ -13,6 +13,8 @@ import arrowup from "../../assets/arrow-up.png"
 import cart from "../../assets/cart.png"
 import Circular from "../../Components/Circular"
 import Chart from "../../Components/Chart"
+import smallapple from "../../assets/smallapple.png"
+import smallorange from "../../assets/smallorange.png"
 // import Table from  "../../Components/TableComponent"
 
 
@@ -65,12 +67,12 @@ const SellersDashboard = () => {
                 
             </div>
             
-            <div className="chart">
+             <div className="chart">
                 <div className="line-chart"><Chart/></div>
-                 <div className="circular-chart">
+                <div className="circular-chart">
                     <p>Order Status</p>
                     <div className="resize"><Circular/></div>
-                    </div>
+                </div>
             </div>
             <div className="recently">
                 <p className='recent'>Recent Orders</p>
@@ -84,37 +86,37 @@ const SellersDashboard = () => {
                 </tr>
                 <tr className='border1'>
                     <td>#13342</td>
-                    <td>Farm Fresh Apple</td>
+                    <td><img src={smallapple}/> Farm Fresh Apple</td>
                     <td>20pcs</td>
                     <td>#5000</td>
                     <td> <button className='cancel'>Cancelled</button></td>
                 </tr>
                 <tr>
                     <td>#13343</td>
-                    <td>Farm Fresh Orange</td>
+                    <td><img src={smallorange}/> Farm Fresh Orange</td>
                     <td>20pcs</td>
                     <td>#5000</td>
                     <td> <button className='complete'>Completed</button></td>
                 </tr>
                 <tr>
                     <td>#13344</td>
-                    <td>Farm Fresh Apple</td>
+                    <td><img src={smallapple}/> Farm Fresh Apple</td>
                     <td>20pcs</td>
                     <td>#5000</td>
                     <td> <button className='complete'>Completed</button></td>
                 </tr>
                 <tr>
                     <td>#13345</td>
-                    <td>Farm Fresh Orange</td>
+                    <td><img src={smallorange}/> Farm Fresh Orange</td>
                     <td>20pcs</td>
                     <td>#5000</td>
                     <td> <button className='pending'>Pending</button></td>
                 </tr>
                 </table>
-                <div className="view">
-                    <a href="">View All </a>
+                <div className="vi">
+                    <a className="viewall"href=""> View All </a>
                 </div>
-                {/* <Table/> */}
+        
             </div>
         </div>
         

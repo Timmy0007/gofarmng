@@ -14,6 +14,7 @@ import Apple from "../../assets/apple.png";
 import Tomato from "../../assets/Tomato.png";
 import Guava from "../../assets/Guava.png";
 import Pawpaw from "../../assets/pawpaw.png";
+import LikedComponent from "../../Components/LikedComponent"
 // import Pawpaw from "../../assets/Pawpaw.png"
 import Carrot from "../../assets/carrot.png";
 import ProductCardDetails from "../../Components/ProductCardDetails/ProductCardDetails";
@@ -58,7 +59,7 @@ const ProductPage = () => {
   },
   {
     image:Carrot,
-    heading: 'Fresh Bread Fruit',
+    heading: 'Fresh Carrot',
     prices: '#1000',
   },
   {
@@ -77,6 +78,7 @@ const ProductPage = () => {
     <div>
       <div className="productpage-container">
         <div className="nike">
+       <div className="liky"><LikedComponent/></div> 
           <img src={sliderData.value} height="" width="500px" alt="" />
           <div className="flex-row">
             {imgs.map((data, i) => (
@@ -89,14 +91,16 @@ const ProductPage = () => {
                   onClick={() => handleClick(i)}
                   height="80"
                   width="80"
+                
                 />
+                
               </div>
             ))}
           </div>
         </div>
         <div className="right-text">
           <h5>Farm Fresh Banana</h5>
-          <Star />
+          <div className="rat"><Star /><p>(12)</p></div>
           <h6>
             #1000 <span>/kg</span>
           </h6>
@@ -128,6 +132,9 @@ const ProductPage = () => {
                 <ProductCardDetails image={item.image} heading={item.heading} prices={item.prices}/>
               )
               )}
+      </div>
+      <div className="center-btn">
+      <button className='vie'><a href="">View More</a></button>
       </div>
      
     </div>

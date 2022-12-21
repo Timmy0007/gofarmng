@@ -69,8 +69,17 @@ p.text, p.seller{
     gap:2em;
     /* width: 1300px; */
     /* margin */
-    
- 
+}
+.rat{
+    display: flex;
+}
+.liky{
+    position: absolute;
+    left: 420px;
+    top: 20px;
+}
+.nike{
+    position: relative;
 }
 p.name{
     font-size:20px;
@@ -85,9 +94,11 @@ img.bck{
     border-radius: 10px;
     padding-left: 4em;
 }
-/* p.star{
-    padding-left: 4em;
-} */
+ .center-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 .first{
     display: flex;
     flex-direction: column;

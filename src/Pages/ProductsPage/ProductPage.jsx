@@ -13,7 +13,7 @@ import Golden from "../../assets/GoldenMelon.png";
 import Apple from "../../assets/apple.png";
 import Tomato from "../../assets/Tomato.png";
 import Guava from "../../assets/Guava.png";
-import Pawpaw from "../../assets/Guava.png";
+import Pawpaw from "../../assets/pawpaw.png";
 // import Pawpaw from "../../assets/Pawpaw.png"
 import Carrot from "../../assets/carrot.png";
 import ProductCardDetails from "../../Components/ProductCardDetails/ProductCardDetails";

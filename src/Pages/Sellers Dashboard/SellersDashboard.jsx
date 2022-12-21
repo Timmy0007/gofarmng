@@ -202,7 +202,7 @@ const SellersDashboard = () => {
                 </p>
                 <p className="with">#31,200</p>
             </div>
-            <button className='vie'>View All</button>
+            <button className='vie'><a href="">View All</a></button>
         </div>
         
       

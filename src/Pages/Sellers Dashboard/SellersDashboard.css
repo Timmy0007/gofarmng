@@ -126,7 +126,7 @@ tr td{
 .recently{
     border: 1px solid #e9e5e5;
     border-radius: 10px;
-    margin-top: 1em;
+    margin-top: 3em;
     width: 86%;
 }
 .view{
@@ -135,8 +135,9 @@ tr td{
     align-items: center;
 }
 .view a {
-    color: #149C08;
-    font-size: bolder;
+    color: #FFF;
+    /* font-size: bolder; */
+    padding: 5px;
 }
 .balance{
     background: #149C08;
@@ -153,6 +154,8 @@ padding: 2em;
 p.amount{
     font-size: 30px;
     font-weight: bolder;
+    color:#ffff;
+    text-align: center;
 
 }
 .depo-with{
@@ -191,15 +194,14 @@ p.trx{
     margin-top: 2em;
 }
 .resize{
-  width: 70%;
+  width: 80%;
   height: auto;
   margin-left: 2em;
   border: 1px solid #e9e5e5;
-  padding:2em;
   border-radius: 5px;
 }
 .circular-chart{
-    margin-top: 2em;
+    margin-top: 10px;
 }
 .circular-chart p{
     font-size: 30px;
@@ -271,9 +273,11 @@ p.trx{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
     }
     .line-chart {
-        /* width:50%; */
+     margin-top:10em;
+     width:100%;
         
     }
     .resize{

@@ -13,39 +13,13 @@ import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
 import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
-import Header from "./Components/Header";
-import ExploreCategories from "./Components/ExploreCategories/ExploreCategories";
-import Footer from "./Components/Footer/Footer";
-import NewestArrival from "./Components/NewestArrival/NewsetArrival";
-import Section from "./Components/Section/Section";
-import SubscribeNewsLetter from "./Components/SubscribeNewsLetter/SubscribeNewsLetter";
-import TopSellingProduct from "./Components/TopSellingProduct/TopSellingProduct";
-// import Home from './Pages/Homepage'
-
 function App() {
   return (
     <>
-      <Carouseldiv />
-      <Section />
-      <ExploreCategories />
-      <TopSellingProduct />
-      <NewestArrival />
-      <SubscribeNewsLetter />
-      <Footer />
-      {/* <Header />
-      <ProductPage />
-      <SellersDashboard /> */}
-      {/* <BrowserRouter>
+      { <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="SignUp" element={<SignUp />} />
-          <Route path="Forgot" element={<Forgot />} />
-          <Route path="Resetpassword" element={<Resetpassword />} />
-          <Route path="Order" element={<Order />} />
-          <Route path="Shippingdets" element={<Shippingdets />} />
-
-          <Routes>
-            <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home/>} />
+            <Route path="Login" element={<Login />} />
             <Route path="SignUp" element={<SignUp />} />
             <Route path="Forgot" element={<Forgot />} />
             <Route path="Resetpassword" element={<Resetpassword />} />
@@ -58,8 +32,7 @@ function App() {
             <Route path="ProductPage" element={<ProductPage />} />
             <Route path="productupload" element={<ProductUpload />} />
           </Routes>
-        </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>}
     </>
   );
 }

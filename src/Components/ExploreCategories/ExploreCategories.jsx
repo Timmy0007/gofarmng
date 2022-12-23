@@ -23,6 +23,7 @@ function ExploreCategories() {
         <button className="exbtn">Beverages</button>
         <button className="exbtn">Meat</button>
       </div>
+      </div>
     </>
   );
 }

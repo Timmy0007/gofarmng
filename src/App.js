@@ -15,15 +15,28 @@ import Carouseldiv from "./Components/Carouseldiv";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
 import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
-import Header from "./Components/Header"
+import Header from "./Components/Header";
+import ExploreCategories from "./Components/ExploreCategories/ExploreCategories";
+import Footer from "./Components/Footer/Footer";
+import NewestArrival from "./Components/NewestArrival/NewsetArrival";
+import Section from "./Components/Section/Section";
+import SubscribeNewsLetter from "./Components/SubscribeNewsLetter/SubscribeNewsLetter";
+import TopSellingProduct from "./Components/TopSellingProduct/TopSellingProduct";
 // import Home from './Pages/Homepage'
 
 function App() {
   return (
     <>
-    <Header/>
-    <ProductPage/>
-    <SellersDashboard/>
+      <Carouseldiv />
+      <Section />
+      <ExploreCategories />
+      <TopSellingProduct />
+      <NewestArrival />
+      <SubscribeNewsLetter />
+      <Footer />
+      {/* <Header />
+      <ProductPage />
+      <SellersDashboard /> */}
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />

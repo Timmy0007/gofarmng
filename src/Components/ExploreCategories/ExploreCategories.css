@@ -16,7 +16,7 @@
   margin-right: 337px;
 }
 
-.btn {
+.exbtn {
   width: 280px;
   height: 57px;
   padding: 12px, 50px, 10px, 50px;
@@ -25,4 +25,11 @@
   cursor: pointer;
   color: #353535;
   margin: 8px;
+  transition-duration: 0.8s;
+}
+
+.exbtn:hover,
+active {
+  background-color: #ff7d09; /* Orange */
+  color: white;
 }

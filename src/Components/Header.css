@@ -45,9 +45,29 @@ select{
 }
 .fa{
     position: absolute;
-    right: 350px;
+    right: 590px;
     bottom:25px;
     cursor: pointer;
+}
+button.sell a {
+    background: #149C08;
+    color: white;
+    padding-left:40px;
+    padding-right:40px;
+    padding: 10px;
+   border-radius: 5px;
+    border: none;
+    
+}
+p.dam{
+    display: flex;
+    /* font-size: 20px; */
+}
+p.bell{
+    margin-top:15px;
+}
+small.amount{
+    font-size: 13px;
 }
 .icons{
     display:flex;

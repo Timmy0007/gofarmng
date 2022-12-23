@@ -1,6 +1,6 @@
 import React from "react";
 import "./SubscribeNewsLetter.css";
-import icon from "../../assets/newsletter.png";
+import icon from "../../assets/icon.svg";
 
 function SubscribeNewsLetter() {
   const subscribeNewsEvent = (e) => {

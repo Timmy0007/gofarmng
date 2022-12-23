@@ -1,8 +1,8 @@
 import React from "react";
-import star from "../../assets/star.png";
-import payment from "../../assets/payment.png";
-import delivery from "../../assets/delivery.png";
-import "./section.css"; 
+import star from "../../assets/star.svg";
+import successful from "../../assets/successful-mobile.svg";
+import delivery from "../../assets/delivery.svg";
+import "./Section.css";
 
 function Section() {
   return (

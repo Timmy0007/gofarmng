@@ -14,6 +14,7 @@ function TopSellingProduct() {
   const [backgroundColor, setBackgroundColor] = useState("");
   const[height, setHeight]= useState("178px")
   const[width, setWidth]= useState("250px")
+  const[transition, setTransition]= useState("")
   const [backgroundColorYam, setBackgroundColorYam] = useState("");
   const[heightYam, setHeightYam]= useState("178px")
   const[widthYam, setWidthYam]= useState("250px")
@@ -28,7 +29,10 @@ function TopSellingProduct() {
     'width': width,
    'height': height,
     backgroundColor: backgroundColor,
+    // transition: transition
   };
+
+
 
   const styleyam = {
     'width': widthYam,
@@ -49,11 +53,11 @@ function TopSellingProduct() {
   };
 
   function hoverEffect(){
-    setBackgroundColor("#ff7d09"); setWidth('260px'); setHeight('195px')
+    setBackgroundColor("#ff7d09"); setWidth('260px'); setHeight('190px');
   }
 
   function hoverOut(){
-    setBackgroundColor(""); setWidth(''); setHeight('')
+    setBackgroundColor(""); setWidth(''); setHeight('');
   }
 
   function hoveryam(){
@@ -80,6 +84,10 @@ function TopSellingProduct() {
     setBackgroundColorPepper(""); setWidthPepper(''); setHeightPepper('')
   }
 
+  function trans(){
+    if (hoverEffect) { setTransition('width 2s, height 2s')}
+  }
+
   return (
     <>
       <h3 className="top-header">Top Selling Product</h3>
@@ -87,9 +95,10 @@ function TopSellingProduct() {
         <div className="banana" 
          onMouseEnter={hoverEffect}
          onMouseLeave={hoverOut}>
-          <div className="top-img">
+          <div id="div1" style={styles}  className="top-img" 
+          onMouseOver={trans}>
             <img className="icon" src={love} alt="Love" />
-            <img style={styles}  className="img" src={banana} alt="Banana" />
+            <img className="img" src={banana} alt="Banana" />
           </div>
 
           <div>
@@ -117,11 +126,12 @@ function TopSellingProduct() {
         </div>
 
         <div className="banana"
-        onMouseEnter={hoveryam}
-        onMouseLeave={hoverYamOut}>
-          <div className="top-img">
+         onMouseEnter={hoveryam}
+         onMouseLeave={hoverYamOut}
+        >
+          <div id="div2" style={styleyam} className="top-img">
             <img className="icon" src={whiteLove} alt="Love" />
-            <img style={styleyam} className="img1" src={yam} alt="Yam" />
+            <img  className="img1" src={yam} alt="Yam" />
           </div>
           <div>
             <div className="top-selling">
@@ -150,9 +160,9 @@ function TopSellingProduct() {
         onMouseEnter={hoverCarrot}
         onMouseLeave={hoverCarrotOut}
         >
-          <div className="top-img">
+          <div id="div3" style={stylecarrot} className="top-img">
             <img className="icon" src={whiteLove} alt="" />
-            <img style={stylecarrot} className="img1" src={carrot} alt="Carrot" />
+            <img className="img1" src={carrot} alt="Carrot" />
           </div>
           <div className="top-selling">
             <div>
@@ -182,9 +192,9 @@ function TopSellingProduct() {
         onMouseEnter={hoverPepper}
         onMouseLeave={hoverPepperOut}
         >
-          <div className="top-img">
+          <div id="div4" style={stylepepper} className="top-img">
             <img className="icon" src={whiteLove} alt="" />
-            <img style={stylepepper} className="img3" src={pepper} alt="Pepper" />
+            <img  className="img3" src={pepper} alt="Pepper" />
           </div>
           <div className="top-selling">
             <div>

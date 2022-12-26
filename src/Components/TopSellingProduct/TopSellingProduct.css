@@ -21,7 +21,9 @@
 }
 
 .banana:hover {
+  width: 282px;
   background-color: #ff7d09;
+  
 }
 
 .top-img {
@@ -33,12 +35,30 @@
   margin-top: 1rem;
 }
 
+#div1{
+  transition: width 2s, height 2s;
+}
+
+#div2{
+  transition: width 2s, height 2s;
+  background-color: none;
+}
+
+#div3{
+  transition: width 2s, height 2s;
+}
+
+#div4{
+  transition: width 2s, height 2s;
+}
+
 .icon {
   margin-left: 14rem;
 }
 
 .img {
   margin-top: -2rem;
+  height: 90%;
 }
 .img1 {
   margin-top: -2rem;

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './login.css'
 import { useState, useEffect } from "react";
+import { FaAlignJustify, FaAlignLeft, FaAngleLeft, FaApple, FaAudioDescription, FaBaby, FaBars, FaBluetooth, FaBuyNLarge, FaDownload, FaFirstOrder, FaProductHunt, FaSalesforce, FaTh } from 'react-icons/fa';
 
 async function logins(item) {
   return fetch('https://gofarm-ng.vercel.app/api/login', {
@@ -78,6 +79,9 @@ async function logins(item) {
   return (
     <div className='loginn'>
       <div className="Signin"> 
+    <FaTh/>
+    <FaBluetooth/>
+    
         <div className='signupg'>
       <p className="sign">Sign up with Google</p>
       </div> 

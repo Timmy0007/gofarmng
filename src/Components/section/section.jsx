@@ -8,26 +8,32 @@ function Section() {
   return (
     <>
       <div className="container">
-        <div className="payment">
-          <img className="text-img" id="star" src={star} alt="star" />
-          <h4 className="text-h4">High quality products </h4>
+        <div className="star">
+          <img className="star-img" id="star" src={star} alt="star" />
+          <p className="hq">High quality products </p>
           <p className="cons">
             consectetur adipiscing elit duis tristique sollicitudin nibh sit
             amet commodo
           </p>
         </div>
-        <div className="payment">
-          <img className="text-img" src={payment} alt="safe payment" />
-          <h4 className="text-h4">Safe Payment</h4>
+
+    <div className="lin"></div>
+
+        <div className="paym">
+          <img className="paym-img" src={payment} alt="safe payment" />
+          <h4 className="sp">Safe Payment</h4>
           <p className="cons">
             consectetur adipiscing elit duis tristique sollicitudin nibh sit
             amet commodo
           </p>
         </div>
-        <div>
-          <img className="text-img" id="delivery" src={delivery} alt="fast delivery" />
-          <h4 className="text-h4" id="fastd">Fast delivery</h4>
-          <p className="deliv" >
+
+        <div className="lin"></div>
+
+        <div className="dell">
+          <img className="del-img" id="delivery" src={delivery} alt="fast delivery" />
+          <h4 className="fd" id="fastd">Fast delivery</h4>
+          <p className="cons" >
             consectetur adipiscing elit duis tristique sollicitudin nibh sit
             amet commodo
           </p>

@@ -29,7 +29,7 @@ function TopSellingProduct() {
     'width': width,
    'height': height,
     backgroundColor: backgroundColor,
-    // transition: transition
+    transition: transition
   };
 
 
@@ -52,8 +52,10 @@ function TopSellingProduct() {
     backgroundColor: backgroundColorPepper,
   };
 
+
+  
   function hoverEffect(){
-    setBackgroundColor("#ff7d09"); setWidth('260px'); setHeight('190px');
+    setBackgroundColor("#ff7d09"); setWidth('260px'); setHeight('190px'); 
   }
 
   function hoverOut(){
@@ -84,9 +86,6 @@ function TopSellingProduct() {
     setBackgroundColorPepper(""); setWidthPepper(''); setHeightPepper('')
   }
 
-  function trans(){
-    if (hoverEffect) { setTransition('width 2s, height 2s')}
-  }
 
   return (
     <>
@@ -95,10 +94,9 @@ function TopSellingProduct() {
         <div className="banana" 
          onMouseEnter={hoverEffect}
          onMouseLeave={hoverOut}>
-          <div id="div1" style={styles}  className="top-img" 
-          onMouseOver={trans}>
+          <div id="div1" className="top-img" >
             <img className="icon" src={love} alt="Love" />
-            <img className="img" src={banana} alt="Banana" />
+            <img className="img" style={styles}  src={banana} alt="Banana" />
           </div>
 
           <div>

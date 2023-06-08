@@ -111,7 +111,7 @@ useEffect(() =>{
         <hr className='hr2'/>
         </div>
         <form  onSubmit={handleSubmit}>
-      <label>
+      <label className='firstname-container'>
       <p className='firstname'>First Name</p>
       <input type="text" id='firstnameinp' name="firstname" value={firstname} placeholder="Enter First Name" required onChange={event => setFirstname(event.target.value)}/>
       </label>

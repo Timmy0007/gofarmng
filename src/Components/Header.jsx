@@ -6,15 +6,21 @@ import { FaBell } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import User from "../assets/user-icon.png"
+import { useNavigate } from "react-router-dom";
 // import Hamburger from "./HamburgerComponent"
 
 const Header = () => {
+  const navigate = useNavigate();
+  const handleClick = () =>{
+    navigate('/Cart')
+  }
+
   return (
     <div className='header-content'>
-        <h3>GoFarmNG</h3>
+        <h3 className='gofarm'>GoFarmNG</h3>
         <div className="select">
-            <select name="" id="">
-                <option value="All-Categories">All Categories</option>
+            <select name="" id="allcats">
+                <option className='allcat' value="All-Categories">All Categories</option>
                 <option value="Cereal">Cereal Crops</option>
                 <option value="Fruits">Fruits</option>
                 <option value="Tubers">Tubers</option>
@@ -28,24 +34,21 @@ const Header = () => {
                 <option value="Meat">Meat</option>
             </select>
             <input className='srch' type="search"placeholder="  Search Products..."/>
-            <i class="fa fa-search"></i>
+            <button type='submit'><i class="fa fa-search"></i></button>
            
         </div>
         <div className="icons">
-          <button className="sell"><a href="">Sell</a></button>
             <p className='bell'><FaBell size={30} color="#000000"/></p>
-            <p className='bell'><FaShoppingCart size={30} color="#000000"/></p>
-            <img src ={User} width="20%"/>
+            <p className='bell' onClick={handleClick}><FaShoppingCart size={30} color="#000000"/></p>
+            </div>
+            {/* <img src ={User} width="20%"/>
             <div className="balan">
             <p className='dam'>Damilola<FaCaretDown size={20} color="#000000"/></p>
               <small className='amount'>#34,000.89</small>
-            </div>
-            
-            
+            </div> */}
            {/* <div className="hamburger"><Hamburger/></div> */}
-            
            
-        </div>
+            <button className='join'><a href="/Signup">Join Us</a></button>
          
     </div>
   )

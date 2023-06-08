@@ -30,7 +30,7 @@ export default function Carouseldiv () {
     <>
     <Header/> 
      <div className={{height: "80vh"}}>
-        <Slider {...settings}>
+        <Slider className="caro" {...settings}>
         <div className='carousel1'>
              
             <img src={image} alt="Image" style={{objectFit: 'contain', maxWidth: '100%'}}/>

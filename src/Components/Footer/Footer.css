@@ -1,17 +1,20 @@
 .footer {
-  width: 1250px;
-  height: 250px;
+  width: 100%;
+  height: 349px;
   left: 4px;
   top: 3894px;
   background: #111111;
 }
 .footer-container {
+  margin-left: -30px;
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .footer-ul {
+  width: 190px;
   color: #fff;
   list-style: none;
 }
@@ -42,16 +45,18 @@
 }
 .footer-list {
   font-size: normal;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 25px;
   line-height: 100%;
   align-items: Left;
   vertical-align: Top;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .footer-image {
+  margin-top: -130px;
   padding-left: 50px;
+  margin-left: 50px;
 }
 .footer-img {
   display: flex;

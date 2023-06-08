@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import Carousel from '../../Components/Carouseldiv'
 import Section from '../../Components/section/section'
 import Explore from '../../Components/ExploreCategories/ExploreCategories'
@@ -11,7 +12,7 @@ import TopSellingProduct  from '../../Components/TopSellingProduct/TopSellingPro
 const Home = () => {
   return (
     <>
-    <div>
+    <div id='homec'>
         <Carousel />
         <Section />
         <Explore />

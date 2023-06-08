@@ -1,6 +1,10 @@
+body{
+    background-color: red;
+}
+
 .loginn{
     margin-top: -380px;
-    margin-left: 350px;
+    margin-left: 450px;
     width: 400px;
     height: 65vh;
     background: #FFFFFF;

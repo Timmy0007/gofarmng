@@ -13,11 +13,14 @@ import Carouseldiv from "./Components/Carouseldiv";
 import SellersDashboard from "./Pages/Sellers Dashboard/SellersDashboard";
 import ProductUpload from "./Components/ProductUpload";
 import ProductPage from "./Pages/ProductsPage/ProductPage";
+import { ShopContextProvider } from "./Components/context/context";
+import Cart from "./Components/Cart/cart";
 
 
 function App() {
   return (
     <>
+    <ShopContextProvider>
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<Home/>} />
@@ -27,14 +30,17 @@ function App() {
         <Route path="Resetpassword" element={<Resetpassword />} />
         <Route path="Order" element={<Order />} />
         <Route path="Shippingdets" element={<Shippingdets />} />
-            <Route path="productview" element={<ProductView />} />
-            <Route path="carousel" element={<Carouseldiv />} />
-            <Route path="sidebar" element={<SideBar />} />
-            <Route path="SellersDashboard" element={<SellersDashboard/>} />
-            <Route path="ProductPage" element={<ProductPage />} />
-            <Route path="productupload" element={<ProductUpload />} />
+        <Route path="productview" element={<ProductView />} />
+        <Route path="carousel" element={<Carouseldiv />} />
+        <Route path="sidebar" element={<SideBar />} />
+        <Route path="Cart" element={<Cart/>} />
+        <Route path="SellersDashboard" element={<SellersDashboard/>} />
+        <Route path="ProductPage" element={<ProductPage />} />
+       <Route path="productupload" element={<ProductUpload />} />
+
           </Routes>
       </BrowserRouter>
+      </ShopContextProvider>
     </>
   );
 }

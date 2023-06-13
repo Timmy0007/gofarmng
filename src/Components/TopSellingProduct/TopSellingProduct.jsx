@@ -8,7 +8,6 @@ import stars from "../../assets/stars.svg";
 import love from "../../assets/love.svg";
 import whiteLove from "../../assets/whiteLove.svg";
 import "./TopSellingProduct.css";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function TopSellingProduct() {
   const [backgroundColor, setBackgroundColor] = useState("");

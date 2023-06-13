@@ -15,7 +15,10 @@ async function logins(item) {
     .then(data => data.json())
  }
 
- export default  function Login({open, onClose}) {
+//  export default  function Login({open, onClose}) {
+
+
+ export default  function Login() {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [message, setMessage]= useState('')
@@ -75,17 +78,16 @@ async function logins(item) {
   //      localStorage.setItem('email', JSON.stringify(response));
   //  }   
 
-  if (!open)  return  null;  
+  // if (!open)  return  null;
+
   return (
     <div className='loginn'>
       <div className="Signin"> 
-    <FaTh/>
-    <FaBluetooth/>
     
         <div className='signupg'>
       <p className="sign">Sign up with Google</p>
       </div> 
-      <button onClick={onClose} className='x'>X</button>
+      {/* <button onClick={onClose} className='x'>X</button> */}
       <div className="orhr">
         <hr className='hrline'/>
         <p className='orl'>or</p>

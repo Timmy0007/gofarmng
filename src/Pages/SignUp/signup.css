@@ -59,6 +59,7 @@
 }
 
 .Horizontal{
+    margin-left: 65px;
     margin-top: 20px;
     display: flex;
 }
@@ -190,7 +191,6 @@
 }
 
 .Asignin{
-    margin-top: 15px;
     font-weight: 550;
     margin-left: 10px;
     color: green;

@@ -148,7 +148,7 @@ useEffect(() =>{
       </form>
       <div className='already'>
         <p className='already1'>Already have an account?</p>
-        <Link className='Asignin' to='/'>Sign In</Link>
+        <Link className='Asignin' to='/Login'>Sign In</Link>
         </div>
       </div>
     </div>

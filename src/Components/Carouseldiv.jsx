@@ -8,11 +8,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Carouseldiv.css';
 import Header from '../Components/Header';
-import Login from "../Pages/Login/Login";
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function Carouseldiv () {
+  const navigate = useNavigate();
+  const handleClick = () =>{
+    navigate('/Login')
+  }
     const settings={
       dots: true,
       infinite: true,
@@ -25,7 +29,8 @@ export default function Carouseldiv () {
       cssEase: "Linear"
     };
 
-    const [openLogin, setOpenLogin]= useState(false)
+
+    // const [openLogin, setOpenLogin]= useState(false)
     return (   
     <>
     <Header/> 
@@ -62,8 +67,8 @@ export default function Carouseldiv () {
           <div className="carouseltext">
           <h2 className="h2-fresh"> We sell incredibly fresh produce</h2>
                 <p className="fresh-fruits">Fresh fruits and vegetables are an important part of a healthy diet. They contain essential vitamins, minerals, and other nutrients that are essential for good health.</p>
-              <button className="btn-shopping" onClick={ () =>setOpenLogin(true)}>Start Shopping</button>
-              <Login open={openLogin} onClose={()=>setOpenLogin(false)} />
+              <button className="btn-shopping" onClick={handleClick} >Start Shopping</button>
+              
               </div>
               <div className="response-container">
                 <div >
@@ -87,3 +92,8 @@ export default function Carouseldiv () {
     </> 
     )
 };
+
+
+
+// onClick={ () =>setOpenLogin(true)}
+// <Login open={openLogin} onClose={()=>setOpenLogin(false)} />

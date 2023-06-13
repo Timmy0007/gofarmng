@@ -3,10 +3,10 @@ body{
 }
 
 .loginn{
-    margin-top: -380px;
+    margin-top: 50px;
     margin-left: 450px;
     width: 400px;
-    height: 65vh;
+    height: 500px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.16);
     border-radius: 16px;
@@ -14,19 +14,19 @@ body{
 }
 
 .Signin{
-    padding-top: 30px;
-    margin-left: 70px;
+    padding-top: 45px;
+    margin-left: 15%;
 }
 
-.x{
+/* .x{
     font-size: 25px;
     margin-left: 290px;
     position: relative;
     top: -50px;
-}
+} */
 
 .signupg{
-    width: 265px;
+    width: 70%;
     height: 34px;
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
@@ -36,11 +36,11 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
 }
 
 .sign{
-    width: 256px;
+    margin-top: 10%;
+    width: 90%;
     height: 24px;
     font-family: 'Inter';
     font-style: normal;
@@ -73,8 +73,8 @@ body{
 }
 
 .orl{
-    margin-top: 5px;
-    margin-left: -65px;
+    margin-top: 25px;
+    margin-left: 15px;
     width: 30.5px;
     height: 0px;
     font-weight: 500;
@@ -92,13 +92,21 @@ body{
     color: #111111;
 } */
 
+.emaillabel{
+    margin-top: 30px;
+}
+
 #emailas{
-    margin-top: 5px;
+    margin-top: -5px;
     width: 255px;
     height: 40px;
     background: #F4F4F4;
     border: 0.5px solid rgba(17, 17, 17, 0.3);
     border-radius: 8px;
+}
+
+.passw{
+    margin-top: 34px;
 }
 
 /* .password{
@@ -115,7 +123,7 @@ body{
 
 #passwordinpu{
     padding-left: 5px;
-    margin-top: 5px;
+    margin-top: -15px;
     width: 275px;
     height: 40px;
     background: #F4F4F4;
@@ -179,8 +187,9 @@ body{
     background: #149C08;
     border-color: #149C08;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 20px;
+    padding-top: 8px;
 }
 
 .DS{

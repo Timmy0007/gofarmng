@@ -12,24 +12,27 @@ import { hover } from "@testing-library/user-event/dist/hover";
 
 function TopSellingProduct() {
   const [backgroundColor, setBackgroundColor] = useState("");
-  const[height, setHeight]= useState("178px")
-  const[width, setWidth]= useState("250px")
-  const[transition, setTransition]= useState("")
+  const[height, setHeight]= useState("")
+  const[width, setWidth]= useState("")
+  const[transitionBanana, setTransitionBanana]= useState("")
+  const[transitionYam, setTransitionYam]= useState("")
+  const[transitionCarrot, setTransitionCarrot]= useState("")
+  const[transitionPepper, setTransitionPepper]= useState("")
   const [backgroundColorYam, setBackgroundColorYam] = useState("");
-  const[heightYam, setHeightYam]= useState("178px")
-  const[widthYam, setWidthYam]= useState("250px")
+  const[heightYam, setHeightYam]= useState("")
+  const[widthYam, setWidthYam]= useState("")
   const [backgroundColorCarrot, setBackgroundColorCarrot] = useState("");
-  const[heightCarrot, setHeightCarrot]= useState("178px")
-  const[widthCarrot, setWidthCarrot]= useState("250px")
+  const[heightCarrot, setHeightCarrot]= useState("")
+  const[widthCarrot, setWidthCarrot]= useState("")
   const [backgroundColorPepper, setBackgroundColorPepper] = useState("");
-  const[heightPepper, setHeightPepper]= useState("178px")
-  const[widthPepper, setWidthPepper]= useState("250px")
+  const[heightPepper, setHeightPepper]= useState("")
+  const[widthPepper, setWidthPepper]= useState("")
 
   const styles = {
     'width': width,
    'height': height,
     backgroundColor: backgroundColor,
-    transition: transition
+    transition: transitionBanana,
   };
 
 
@@ -37,25 +40,28 @@ function TopSellingProduct() {
   const styleyam = {
     'width': widthYam,
    'height': heightYam,
-    backgroundColor: backgroundColorYam
+    backgroundColor: backgroundColorYam,
+    transition: transitionYam,
   };
 
   const stylecarrot = {
     'width': widthCarrot,
    'height': heightCarrot,
     backgroundColor: backgroundColorCarrot,
+    transition: transitionCarrot,
   };
 
   const stylepepper = {
     'width': widthPepper,
    'height': heightPepper,
     backgroundColor: backgroundColorPepper,
+    transition: transitionPepper,
   };
 
 
   
   function hoverEffect(){
-    setBackgroundColor("#ff7d09"); setWidth('260px'); setHeight('190px'); 
+    setWidth('260px'); setTransitionBanana('2s')
   }
 
   function hoverOut(){
@@ -63,7 +69,7 @@ function TopSellingProduct() {
   }
 
   function hoveryam(){
-    setBackgroundColorYam("#ff7d09"); setWidthYam('260px'); setHeightYam('190px')
+   setWidthYam('260px'); setTransitionYam('2s')
   }
 
   function hoverYamOut(){
@@ -71,7 +77,7 @@ function TopSellingProduct() {
   }
 
   function hoverCarrot(){
-    setBackgroundColorCarrot("#ff7d09"); setWidthCarrot('260px'); setHeightCarrot('195px')
+   setWidthCarrot('260px'); setTransitionCarrot('2s')
   }
 
   function hoverCarrotOut(){
@@ -79,7 +85,7 @@ function TopSellingProduct() {
   }
 
   function hoverPepper(){
-    setBackgroundColorPepper("#ff7d09"); setWidthPepper('260px'); setHeightPepper('195px')
+   setWidthPepper('260px'); setTransitionPepper('2s')
   }
 
   function hoverPepperOut(){
@@ -96,7 +102,7 @@ function TopSellingProduct() {
          onMouseLeave={hoverOut}>
           <div id="div1" className="top-img" >
             <img className="icon" src={love} alt="Love" />
-            <img className="img" style={styles}  src={banana} alt="Banana" />
+            <img style={styles} className="img1"  src={banana} alt="Banana" />
           </div>
 
           <div>
@@ -127,9 +133,9 @@ function TopSellingProduct() {
          onMouseEnter={hoveryam}
          onMouseLeave={hoverYamOut}
         >
-          <div id="div2" style={styleyam} className="top-img">
+          <div id="div2"  className="top-img">
             <img className="icon" src={whiteLove} alt="Love" />
-            <img  className="img1" src={yam} alt="Yam" />
+            <img style={styleyam} className="img1" src={yam} alt="Yam" />
           </div>
           <div>
             <div className="top-selling">
@@ -158,9 +164,9 @@ function TopSellingProduct() {
         onMouseEnter={hoverCarrot}
         onMouseLeave={hoverCarrotOut}
         >
-          <div id="div3" style={stylecarrot} className="top-img">
+          <div id="div3" className="top-img">
             <img className="icon" src={whiteLove} alt="" />
-            <img className="img1" src={carrot} alt="Carrot" />
+            <img  style={stylecarrot} className="img1" src={carrot} alt="Carrot" />
           </div>
           <div className="top-selling">
             <div>
@@ -190,9 +196,9 @@ function TopSellingProduct() {
         onMouseEnter={hoverPepper}
         onMouseLeave={hoverPepperOut}
         >
-          <div id="div4" style={stylepepper} className="top-img">
+          <div id="div4" className="top-img">
             <img className="icon" src={whiteLove} alt="" />
-            <img  className="img3" src={pepper} alt="Pepper" />
+            <img style={stylepepper} className="img1" src={pepper} alt="Pepper" />
           </div>
           <div className="top-selling">
             <div>

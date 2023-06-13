@@ -432,7 +432,7 @@ import Prods from "./Prods/prods.js";
 
 return (
       <>
-
+      <p>Newest Arrival</p>
       <div className="newproduct">
         {product.map((props) => (
           <Prods data={props}/>)

@@ -35,7 +35,7 @@
   z-index: 1;
   margin-left: 4%;
   padding-left: 5.8%;
-  width: 80% ;
+  width: 90% ;
   height: 520px;
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(17, 17, 17, 0.2);
@@ -55,11 +55,6 @@
   width: 250px;
 }
 
-.newimg2, .newimg3, .newimg4{
-  position: relative;
-  height: 200px;
-  width: 250px;
-}
 
 .newest-ratings{
   display: flex;
@@ -105,9 +100,10 @@
   margin-top: 6%;
 }
 
-.cart-button{
-  margin-left: -2%;
-  width: 238px;
+.cartt-button{
+  color: white;
+  margin-left: -13px;
+  width: 276px;
   height: 54px;
   background: #149C08;
   border-radius: 5px;

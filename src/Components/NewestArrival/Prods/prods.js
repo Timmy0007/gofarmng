@@ -94,7 +94,7 @@ const Prods = (props) => {
                 </button>
             </div>
             <div>
-              <button className="cart-button" onClick={() =>{
+              <button className="cartt-button" onClick={() =>{
                  addToCart(id);
                  handleAdd();
               }}>

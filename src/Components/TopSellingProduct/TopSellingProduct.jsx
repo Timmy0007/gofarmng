@@ -90,7 +90,7 @@ function TopSellingProduct() {
 
   function hoverPepperOut(){
     setBackgroundColorPepper(""); setWidthPepper(''); setHeightPepper('')
-  }
+  } 
 
 
   return (

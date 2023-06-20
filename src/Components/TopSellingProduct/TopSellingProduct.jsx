@@ -191,7 +191,7 @@ function TopSellingProduct() {
           </div>
         </div>
 
-        <div className="banana"
+        <div id="peppper" className="banana"
         onMouseEnter={hoverPepper}
         onMouseLeave={hoverPepperOut}
         >

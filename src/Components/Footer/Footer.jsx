@@ -16,7 +16,7 @@ function Footer() {
           <div className="footer-ul1">
             <ul className="footer-ul">
               <li className="footer-contact">
-                <h5>Contact</h5>
+                <h5 className="fc">Contact</h5>
               </li>
               <li className="footer-list">Help /FAQ</li>
               <li className="footer-list">Press</li>
@@ -26,9 +26,9 @@ function Footer() {
           </div>
 
           <div>
-            <ul className="footer-ul">
+            <ul id="footer-2" className="footer-ul">
               <li className="footer-legal">
-                <h5>Legal</h5>
+                <h5 className="fl">Legal</h5>
               </li>
               <li className="footer-list">Terms & Condition</li>
               <li className="footer-list">Privacy Policy</li>
@@ -39,25 +39,25 @@ function Footer() {
           <div className="footer-3">
             <ul className="footer-ul">
               <li className="footer-quest">
-                <h5>Got Questions</h5>
-              </li>
+                <h5 className="gq">Got Questions</h5>
+              </li >
               <li className="footer-list">Call: 081000000000</li>
-              <li className="footer-list">Email:pmgrazac@gmail.com</li>
+              <li id="f-mail" className="footer-list">Email:pmgrazac@gmail.com</li>
             </ul>
           </div>
           <div className="footer-image">
-            <div className="footer-img">
-              <img src={app} alt="appstore" />
-              <img src={google} alt="googleplay" />
+            <div id="f-img" className="footer-img">
+              <img id="app-img" src={app} alt="appstore" />
+              <img id="gog-img" src={google} alt="googleplay" />
             </div>
             <div>
               <p className="footer-p">Download and contect with us</p>
             </div>
-            <div className="footer-img">
-              <img src={facebook} alt="Facebook" />
-              <img src={insta} alt="Instagram" />
-              <img src={twitt} alt="Twitter" />
-              <img src={face} alt="Facebook" />
+            <div id="finf" className="footer-img">
+              <img className="sm-imgs" src={facebook} alt="Facebook" />
+              <img className="sm-imgs" src={insta} alt="Instagram" />
+              <img className="sm-imgs" src={twitt} alt="Twitter" />
+              <img className="sm-imgs" src={face} alt="Facebook" />
             </div>
           </div>
         </div>

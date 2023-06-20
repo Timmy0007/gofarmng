@@ -166,3 +166,58 @@ line-height: 22px;
     background-image: url('../assets/carousel1.webp');
     height: 100vh;
 } */
+
+@media screen and (max-width: 569px) {
+
+    .carousel-text-container{
+        margin-top: -215px;
+    }
+
+    .h2-fresh{
+    font-size: 17px;
+    line-height: 15px;
+    }
+
+    .fresh-fruits{
+        margin-left: -3px;
+        margin-top: -10px;
+        width: 95%;
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .btn-shopping{
+        margin-top: -20px;
+        width: 30%;
+        height: 35px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .response-container{
+        margin-left: -5%;
+        margin-top: -35px;
+        gap: 15%;
+    }
+
+    .response-count{
+     font-size: 13px;   
+    }
+
+    .response-details{
+        font-size: 11px;
+    }
+
+  
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

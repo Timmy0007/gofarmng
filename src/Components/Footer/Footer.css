@@ -101,3 +101,83 @@ span {
   text-align: left;
   color: #ffffff;
 }
+
+
+@media screen and (max-width: 569px) {
+
+  .footer{
+    height: 100%;
+  }
+  .footer-container{
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-3{
+    width: 50%;
+    margin-left: -20px;
+    margin-top: -50px;
+  }
+
+  #footer-2{
+    margin-left: -20px;
+  }
+
+  .footer-ul1{
+    margin-left: -20px;
+  }
+
+  .gq, .fc, .fl{
+    font-size: 13px;
+  }
+
+  .footer-ul{
+    width: 30%;
+  }
+
+  .footer-list{
+    font-size: 12px;
+  }
+
+  .footer-image{
+    margin-left: -80px;
+  }
+
+  .footer-p{
+    width: 100%;
+  }
+
+  .footer-img{
+    width: 10px;
+    gap: 1px;
+  }
+
+  #app-img{
+    margin-left:-50px;
+    width: 80px;
+  }
+
+  #gog-img{
+    width: 80px;
+  }
+
+  #finf{
+    margin-left: 30px;
+  }
+
+  .sm-imgs{
+    width: 20px;
+  }
+
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

@@ -18,12 +18,20 @@
 
 
 .newproduct{
+  margin-top: -40px;
   display: grid;
   width: 100%;
   grid-template-columns: 25% 25% 25% 25%;
   
 }
 
+.news-arri{
+  margin-left: 25px;
+  font-family: Nunito;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 44px;
+}
 
 .top-fruit {
   margin-top: 20%;
@@ -119,3 +127,57 @@
   border-radius: 8px;
 }
 
+@media screen and (max-width: 569px) {
+
+  .newproduct{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    
+  }
+  
+  .newimg1{
+    width: 150px;
+  }
+
+  .newest-name{
+    font-size: 13px;
+  }
+
+  .cartt-button{
+    margin-left: -7px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 569px) {
+
+  
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

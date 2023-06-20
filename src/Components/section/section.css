@@ -132,3 +132,50 @@
   letter-spacing: 0em;
   text-align: center;
 } */
+
+@media screen and (max-width: 569px) {
+
+
+  .container{
+    gap: 8%;
+    width: 100%;
+  }
+
+  .star{
+    margin-left: 3%;
+    width: 100%;
+  }
+  .star-img, .paym-img, .del-img{
+    width: 40%;
+  }
+
+  .hq, .sp, .fd{
+    margin-left: -12%;
+    font-size: 17px;
+    width: 150%;
+  }
+
+  .cons{
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  .lin{
+    margin-top: 70px;
+    height: 180px;
+  }
+
+
+  
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

@@ -99,14 +99,36 @@ select{
 
 /* ............Mobile responsiveness............................... */
 
-@media screen and (max-width: 768px) {
-    select, .srch {
-      display:none;
-    }
-    .icons img, .icons p{
-        display:none;
-    }
-    .hamburger{
-        display:block;
-    }
-  }
+
+@media screen and (max-width: 569px) {
+
+   .select{
+    display: none;
+   }
+   
+   .gofarm{
+    font-size: 25px;
+   }
+
+   .icons{
+    margin-left: 42%;
+    gap: 30%;
+   }
+
+   .join{
+    width: 17%;
+    height: 39px;
+   }
+  
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

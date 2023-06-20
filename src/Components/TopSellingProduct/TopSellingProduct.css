@@ -133,3 +133,51 @@ span {
   border: 1px solid;
   cursor: pointer;
 }
+
+@media screen and (max-width: 569px) {
+
+  .top-header{
+    font-size: 21px;
+    margin-top: 50px;
+    margin-left: 7%;
+  }
+
+  .fruits{
+    margin-left: 2%;
+    display: grid;
+    width: 98%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .banana{
+    width: 95%;
+  }
+
+  .img1{
+    margin-left: 7%;
+    width: 60%;
+  }
+
+  .cart-button{
+    width: 93%;
+  }
+
+  .top-name{
+    font-size: 15px;
+  }
+
+  .top-price{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+
+
+}

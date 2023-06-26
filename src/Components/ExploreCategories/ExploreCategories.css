@@ -99,6 +99,19 @@ active {
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+  .explo{
+    margin-top: -500px;
+    margin-bottom: 70px;
+  }
 
+  .explore-header{
+    font-size: 28px;
+  }
+
+  .exbtn{
+    width: 20%;
+    height: 37px;
+    font-size: 20px;
+  }
 
 }

@@ -176,6 +176,40 @@
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+  .container{
+    gap: 6%;
+    width: 100%;
+  }
+
+  .star{
+    margin-left: 5%;
+    width: 100%;
+  }
+  .star-img, .paym-img, .del-img{
+    width: 40%;
+  }
+
+  .star-img{
+    margin-left: 35px;
+  }
+
+  .hq, .sp, .fd{
+    margin-left: -12%;
+    font-size: 32px;
+    width: 180%;
+  }
+
+  .cons{
+    margin-left: -8px;
+    margin-top: 40px;
+    font-size: 27px;
+    width: 120%;
+  }
+
+  .lin{
+    margin-top: 90px;
+    height: 180px;
+  }
 
 
 }

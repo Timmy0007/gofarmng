@@ -129,6 +129,36 @@ select{
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+    .select{
+        width: 15%;
+    }
+
+    .gofarm{
+        font-size: 25px;
+    }
+
+    .icons{
+        margin-left: 28%;
+        gap: 20%;
+    }
+
+    .join{
+        margin-left: 19px;
+        font-size: 17px;
+        width: 80px;
+        height: 39px;
+       }
+}
 
 
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+ 
+    .select{
+        width: 25%;
+    }
+
+    .icons{
+        margin-left: 17%;
+        gap: 50%;
+    }
 }

@@ -153,9 +153,15 @@ span {
     width: 95%;
   }
 
+  .banana:hover {  
+    width: 95%;
+    background-color: #ff7d09;
+    transition: 2s;
+  }
+
   .img1{
-    margin-left: 7%;
-    width: 60%;
+    margin-left: 2%;
+    width: 76%;
   }
 
   .cart-button{
@@ -169,6 +175,11 @@ span {
   .top-price{
     font-size: 15px;
   }
+
+  .view-btn{
+    margin-left: 25%;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 570px) and (max-width: 720px) {
@@ -178,6 +189,101 @@ span {
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+  .top-header{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 7%;
+  }
 
+  .fruits{
+    margin-left: 2%;
+    display: grid;
+    width: 98%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .banana{
+    width: 95%;
+  }
+
+  .banana:hover {  
+    width: 95%;
+    background-color: #ff7d09;
+    transition: 2s;
+  }
+
+  .img1{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cart-button{
+    font-size: 25px;
+    width: 93%;
+  }
+
+  .top-name{
+    font-size: 30px;
+  }
+
+  .top-price{
+    font-size: 25px;
+  }
+
+  .view-btn{
+    margin-top: 50px;
+    margin-left: 38%;
+    font-size: 28px;
+  }
+
+  .price-pcs{
+    display: none;
+  }
+
+  #pmm{
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+
+  .fruits{
+    margin-left: 2%;
+    display: grid;
+    width: 98%;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .banana{
+    width: 95%;
+  }
+
+  .cart-button{
+    font-size: 25px;
+    width: 93%;
+  }
+
+  .top-name{
+    font-size: 30px;
+  }
+
+  .top-price{
+    font-size: 25px;
+  }
+
+  .view-btn{
+    margin-top: 50px;
+    margin-left: 38%;
+    font-size: 28px;
+  }
+
+  .price-pcs{
+    display: none;
+  }
+
+  #pmm{
+    margin-top: 20px;
+  }
 
 }

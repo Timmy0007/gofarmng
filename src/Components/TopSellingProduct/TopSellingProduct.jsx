@@ -118,7 +118,7 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
-            <div className="plus-minus">
+            <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
             </div>
@@ -149,7 +149,7 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
-            <div className="plus-minus">
+            <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
             </div>
@@ -181,7 +181,7 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
-            <div className="plus-minus">
+            <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
             </div>
@@ -212,7 +212,7 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
-            <div className="plus-minus">
+            <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
             </div>

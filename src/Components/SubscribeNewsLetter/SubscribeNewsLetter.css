@@ -86,7 +86,45 @@
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+  .subscribe-header{
+    font-size: 38px;
+  }
 
+  .subscribe-paragraph{
+    font-size: 27px;
+  }
+
+  .subscribe-input{
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  .subscribe-button{
+    margin-left: 1%;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+
+  .subscribe-header{
+    font-size: 38px;
+  }
+
+  .subscribe-paragraph{
+    font-size: 30px;
+  }
+
+  .subscribe-input{
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  .subscribe-button{
+    margin-left: 1%;
+    font-size: 26px;
+  }
 
 }
+
 

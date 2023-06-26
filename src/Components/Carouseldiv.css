@@ -218,6 +218,56 @@ line-height: 22px;
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 
+    .carousel-text-container{
+        margin-top: -417px;
+    }
 
+    .h2-fresh{
+    font-size: 44px;
+    line-height: 39px;
+    }
 
+    .fresh-fruits{
+        margin-left: -3px;
+        margin-top: 35px;
+        width: 95%;
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    .btn-shopping{
+        margin-top: -10px;
+        width: 40%;
+        height: 55px;
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .response-container{
+        margin-left: -5%;
+        margin-top: -5px;
+        gap: 10%;
+    }
+
+    .response-count{
+     font-size: 25px;   
+    }
+
+    .response-details{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+
+    .carousel-text-container{
+        margin-top: -530px;
+    }
+
+}
+
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+
+    
 }

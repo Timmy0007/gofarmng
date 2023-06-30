@@ -170,12 +170,12 @@ line-height: 22px;
 @media screen and (max-width: 569px) {
 
     .carousel-text-container{
-        margin-top: -215px;
+        margin-top: -200px;
     }
 
     .h2-fresh{
     font-size: 17px;
-    line-height: 15px;
+    line-height: 18px;
     }
 
     .fresh-fruits{
@@ -187,7 +187,7 @@ line-height: 22px;
     }
 
     .btn-shopping{
-        margin-top: -20px;
+        margin-top: -30px;
         width: 30%;
         height: 35px;
         font-size: 12px;
@@ -205,6 +205,7 @@ line-height: 22px;
     }
 
     .response-details{
+        margin-top: -10px;
         font-size: 11px;
     }
 

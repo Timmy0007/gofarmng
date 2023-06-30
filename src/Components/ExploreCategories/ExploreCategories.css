@@ -88,8 +88,10 @@ active {
   .exbtn{
     width: 30%;
     height: 26px;
-    font-size: 13px;
+    font-size: 12px;
   }
+
+  
 }
 
 @media screen and (min-width: 570px) and (max-width: 720px) {

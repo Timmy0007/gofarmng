@@ -136,6 +136,10 @@
     
   }
   
+  .newss{
+    pointer-events: none;
+  }
+
   .newimg1{
     width: 150px;
   }
@@ -144,6 +148,9 @@
     font-size: 13px;
   }
 
+  .pcs{
+    margin-left: 5px;
+  }
   .cartt-button{
     margin-left: -7px;
     width: 100%;

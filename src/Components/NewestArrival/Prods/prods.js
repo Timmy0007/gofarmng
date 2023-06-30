@@ -56,13 +56,14 @@ const Prods = (props) => {
         <div>
         <div className= "top-fruit">
           <div className='newest-fruit'
-          onMouseEnter={hoverEffect}
-          onMouseLeave={hoverOut}
           >
+            <div className='newss'
+             onMouseEnter={hoverEffect}
+             onMouseLeave={hoverOut}
+            >
             <div className='newest-img'>
             <img style={styles} className='newimg1' src={productImage}/>
             </div>
-            <div>
             <div>
               <p className="newest-name">{productName}</p>
             </div>
@@ -74,6 +75,8 @@ const Prods = (props) => {
                 <p>#{price}</p>
                 <p className="pcs">{pcs}</p>
             </div>
+            </div>
+
             <div className="plus-minus">
               <button className="-"
               onClick={() =>{
@@ -105,7 +108,6 @@ const Prods = (props) => {
           </div>
         </div>
         </div>
-       </div>
 
     
   )

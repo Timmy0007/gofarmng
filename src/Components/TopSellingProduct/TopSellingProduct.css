@@ -159,21 +159,32 @@ span {
     transition: 2s;
   }
 
+  .topp{
+    pointer-events: none;
+  }
+
   .img1{
     margin-left: 2%;
-    width: 76%;
+    width: 66%;
   }
 
   .cart-button{
     width: 93%;
   }
 
+
   .top-name{
     font-size: 15px;
   }
 
   .top-price{
+    margin-top: 20px;
     font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .price-pcs{
+    margin-top: -20px;
   }
 
   .view-btn{
@@ -182,10 +193,6 @@ span {
   }
 }
 
-@media screen and (min-width: 570px) and (max-width: 720px) {
-
-
-}
 
 @media screen and (min-width: 721px) and (max-width: 1021px) {
 

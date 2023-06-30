@@ -96,15 +96,17 @@ function TopSellingProduct() {
     <>
       <h3 className="top-header">Top Selling Product</h3>
       <div className="fruits">
-        <div className="banana" 
-         onMouseEnter={hoverEffect}
-         onMouseLeave={hoverOut}>
+        <div className="banana">
+          
+          <div className="topp"
+           onMouseEnter={hoverEffect}
+           onMouseLeave={hoverOut}
+          >
           <div id="div1" className="top-img" >
             <img className="icon" src={love} alt="Love" />
-            <img style={styles} className="img1"  src={banana} alt="Banana" />
+            <img style={styles} id="ban" className="img1"  src={banana} alt="Banana" />
           </div>
 
-          <div>
             <div className="top-selling">
               <p className="top-name">Fresh Banana</p>
             </div>
@@ -118,6 +120,9 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
+              </div>
+
+
             <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
@@ -125,18 +130,17 @@ function TopSellingProduct() {
             <div>
               <button className="cart-button">Add to Cart</button>
             </div>
-          </div>
         </div>
 
-        <div className="banana"
-         onMouseEnter={hoveryam}
-         onMouseLeave={hoverYamOut}
-        >
+        <div className="banana">
+          <div className="topp"
+          onMouseEnter={hoveryam}
+          onMouseLeave={hoverYamOut}
+          >
           <div id="div2"  className="top-img">
             <img className="icon" src={whiteLove} alt="Love" />
             <img style={styleyam} className="img1" src={yam} alt="Yam" />
           </div>
-          <div>
             <div className="top-selling">
               <p className="top-name">Fresh Farm Yam</p>
             </div>
@@ -149,6 +153,8 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
+            </div>
+
             <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
@@ -156,18 +162,17 @@ function TopSellingProduct() {
             <div>
               <button className="cart-button">Add to Cart</button>
             </div>
-          </div>
         </div>
 
-        <div className="banana"
-        onMouseEnter={hoverCarrot}
-        onMouseLeave={hoverCarrotOut}
-        >
+        <div className="banana">
+          <div className="topp"
+          onMouseEnter={hoverCarrot}
+          onMouseLeave={hoverCarrotOut}
+          >
           <div id="div3" className="top-img">
             <img className="icon" src={whiteLove} alt="" />
             <img  style={stylecarrot} className="img1" src={carrot} alt="Carrot" />
           </div>
-          <div className="top-selling">
             <div>
               <p className="top-name">Farm Fresh Carrot</p>
             </div>
@@ -181,6 +186,8 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
+          </div>
+
             <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
@@ -188,18 +195,17 @@ function TopSellingProduct() {
             <div>
               <button className="cart-button">Add to Cart</button>
             </div>
-          </div>
         </div>
 
-        <div id="peppper" className="banana"
-        onMouseEnter={hoverPepper}
-        onMouseLeave={hoverPepperOut}
-        >
+        <div id="peppper" className="banana">
+          <div className="topp"
+          onMouseEnter={hoverPepper}
+          onMouseLeave={hoverPepperOut}
+          >
           <div id="div4" className="top-img">
             <img className="icon" src={whiteLove} alt="" />
             <img style={stylepepper} className="img1" src={pepper} alt="Pepper" />
           </div>
-          <div className="top-selling">
             <div>
               <p className="top-name">Farm Fresh Pepper</p>
             </div>
@@ -212,6 +218,8 @@ function TopSellingProduct() {
                 <span className="price-pcs">/Pcs</span>
               </p>
             </div>
+          </div>
+
             <div id="pmm" className="plus-minus">
               <button className="decrement">-</button>2
               <button className="increment">+</button>1
@@ -219,7 +227,6 @@ function TopSellingProduct() {
             <div>
               <button className="cart-button">Add to Cart</button>
             </div>
-          </div>
         </div>
       </div>
 

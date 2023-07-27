@@ -237,7 +237,7 @@ body{
 }
 
 .signupg{
-    margin-left: 9%;
+    margin-left: 6%;
 }
 
 .sign{
@@ -255,20 +255,24 @@ body{
 }
 
 .emaillabel{
+    margin-left: 6%;
     font-size: 15px;
 }
 
 #emailas{
-    width: 200px;
+    margin-left: 6%;
+    width: 170px;
     font-size: 13px;
 }
 
 .passw{
+    margin-left: 16%;
     font-size: 15px;
 }
 
 #passwordinpu{
-    width: 200px;
+    margin-left: 16%;
+    width: 170px;
     font-size: 13px;
 }
 
@@ -276,6 +280,11 @@ body{
     font-size: 14px;
     margin-left: 1%;
 }
+
+#checkbox{
+    margin-left: 3%;
+}
+
 
 .remember{
     font-size: 13px;
@@ -293,11 +302,11 @@ body{
 }
 
 .dont{
-    margin-left: -9%;
+    margin-left: -2%;
 }
 
 .signupp{
-    margin-left: 5%;
+    margin-left: -29%;
 }
 
 }
@@ -333,25 +342,25 @@ body{
 }
 
 .emaillabel{
-    margin-left: 10%;
+    margin-left: 12%;
     font-size: 20px;
 }
 
 #emailas{
     width: 300px;
     font-size: 16px;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .passw{
     font-size: 20px;
-    margin-left: 15%;
+    margin-left: 17%;
 }
 
 #passwordinpu{
     width: 300px;
     font-size: 16px;
-    margin-left: 15%;
+    margin-left: 17%;
 }
 
 .emessage{
@@ -360,7 +369,7 @@ body{
 }
 
 #checkbox{
-    margin-left: 6%;
+    margin-left: 8%;
 }
 
 .remember{
@@ -394,6 +403,9 @@ body{
 
 @media screen and (min-width: 1022px) and (max-width: 1201px) {
 
-    
+    .loginn{
+        margin: 0;
+        margin-left: 30%;
+    }
 
 }

@@ -223,3 +223,174 @@ body{
     margin-top: 20px;
     color: #149C08;
 }
+
+
+@media screen and (max-width: 569px) {
+
+.loginn{
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 20%;
+    width: 77%;
+}
+
+.signupg{
+    margin-left: 9%;
+}
+
+.sign{
+    font-size: 15px;
+}
+
+.hrline{
+    margin-top: 40px;
+    margin-left: 13%;
+}
+
+.hrlin{
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+.emaillabel{
+    font-size: 15px;
+}
+
+#emailas{
+    width: 200px;
+    font-size: 13px;
+}
+
+.passw{
+    font-size: 15px;
+}
+
+#passwordinpu{
+    width: 200px;
+    font-size: 13px;
+}
+
+.emessage{
+    font-size: 14px;
+    margin-left: 1%;
+}
+
+.remember{
+    font-size: 13px;
+}
+
+.forgot{
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.signinb{
+    width: 120px;
+    margin-left: 17%;
+    font-size: 15px;
+}
+
+.dont{
+    margin-left: -9%;
+}
+
+.signupp{
+    margin-left: 5%;
+}
+
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+.loginn{
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+}
+
+.signupg{
+    margin-left: 9%;
+}
+
+.sign{
+    font-size: 20px;
+}
+
+.hrline{
+    margin-top: 40px;
+    margin-left: 30%;
+}
+
+.hrlin{
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+.emaillabel{
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+#emailas{
+    width: 300px;
+    font-size: 16px;
+    margin-left: 10%;
+}
+
+.passw{
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+#passwordinpu{
+    width: 300px;
+    font-size: 16px;
+    margin-left: 15%;
+}
+
+.emessage{
+    font-size: 19px;
+    margin-left: 1%;
+}
+
+#checkbox{
+    margin-left: 6%;
+}
+
+.remember{
+    font-size: 17px;
+}
+
+.forgot{
+    font-size: 17px;
+    margin-left: 55px;
+}
+
+.signinb{
+    width: 32%;
+    margin-left: 21%;
+    font-size: 20px;
+}
+
+.dont{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: -9%;
+}
+
+.signupp{
+    margin-top: 40px;
+    margin-left: 5%;
+    font-size: 21px;
+}
+
+}
+
+@media screen and (min-width: 1022px) and (max-width: 1201px) {
+
+    
+
+}

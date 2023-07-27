@@ -292,6 +292,7 @@ body{
 
 .forgot{
     font-size: 13px;
+    margin-top: 4px;
     margin-left: 3px;
 }
 
@@ -306,7 +307,7 @@ body{
 }
 
 .signupp{
-    margin-left: -29%;
+    margin-left: 1%;
 }
 
 }

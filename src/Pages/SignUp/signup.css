@@ -101,7 +101,7 @@
     color:red;
 }
 
-#emailad, #firstnameinp, #lastnameinp, #Number, #roleinp{
+#emailads, #firstnameinp, #lastnameinp, #Number, #roleinp{
     padding-left: 20px;
     margin-top: 10px;
     width: 81%;
@@ -123,7 +123,7 @@
     color: #111111;   
 }
 
-#passwordinp, #confinp{
+#passwordinps, #confinps{
     padding-left: 20px;
     margin-top: 10px;
     width: 395px;
@@ -156,7 +156,7 @@
     color: #888888;
 }
 
-.signupb{
+.signupbb{
     width: 395px;
     height: 49px;
     background: #149C08;
@@ -194,4 +194,62 @@
     font-weight: 550;
     margin-left: 10px;
     color: green;
+}
+
+
+@media screen and (max-width: 569px) {
+
+    .Signupp{   
+        overflow: hidden;
+    }
+
+    .signing{
+        width: 90%;
+    }
+
+    #sign{
+        margin-top: 1px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .hr1, .hr2{
+        width: 20%;
+        margin-top: 25px;
+    }
+    .Horizontal{
+        margin-left: 25%;
+    }
+
+    .or{
+        font-size: 20px;
+    }
+
+    #lastnameinp, #emailads, #Number, #roleinp, #confinps{
+        width: 39%;
+    }
+
+    #passwordinps{
+        width: 89%;
+    }
+
+    .signupbb{
+        margin-top: 45px;
+        margin-left: 12%;
+        width: 60%;
+    }
+
+    .already{
+        font-size: 13px;
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1021px) {
+
+    .signupp{
+        overflow: hidden;
+    }
 }

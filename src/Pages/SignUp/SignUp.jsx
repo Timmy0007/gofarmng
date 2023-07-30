@@ -103,7 +103,7 @@ useEffect(() =>{
     <div className='Signupp'>
       <div className="Signup">
         <div className='signing'>
-      <p className='sign'>Sign in with Google</p>
+      <p id='sign' className='sign'>Sign in with Google</p>
       </div>
       <div className="Horizontal">
         <hr className='hr1'/>
@@ -121,7 +121,7 @@ useEffect(() =>{
       </label>
       <label>
       <p className='emaill'>Email Address  <p className='emessage'>{message}</p></p>
-      <input type="email" id='emailad' name="email" value={email} placeholder="tim@gmail.com" onChange={handleChange}/>
+      <input type="email" id='emailads' name="email" value={email} placeholder="tim@gmail.com" onChange={handleChange}/>
       </label>
       <label>
       <p className='phoneNumber'>Phone Number</p>
@@ -133,18 +133,18 @@ useEffect(() =>{
       </label>
       <label>
       <p className='password'>Password</p>
-      <input type="password" id='passwordinp' value={password} name="password" placeholder="enter password" minLength={4} required onChange={event => setPassword(event.target.value)}/>
+      <input type="password" id='passwordinps' value={password} name="password" placeholder="enter password" minLength={4} required onChange={event => setPassword(event.target.value)}/>
       </label>
       <label>
       <p className='confp'>Confirm Password</p>
       <p className='emessage'>{pmessage}</p>
-      <input type="password" id='confinp' name="confirmpassword" value={confirmPassword} placeholder="enter password" minLength={4} required onChange={event => setConfirmPassword(event.target.value)}/>
+      <input type="password" id='confinps' name="confirmpassword" value={confirmPassword} placeholder="enter password" minLength={4} required onChange={event => setConfirmPassword(event.target.value)}/>
       </label>
       <div className='DS'>
       <input type="checkbox" required/>
       <p className='agree'>I agree to GoFarmNg terms of service and privacy policy</p>
       </div>
-      <button className='signupb' onClick={handleClick} >Sign Up</button>
+      <button className='signupbb' onClick={handleClick} >Sign Up</button>
       </form>
       <div className='already'>
         <p className='already1'>Already have an account?</p>

@@ -100,7 +100,7 @@ useEffect(() =>{
 //   }
 
   return (
-    <div className='Signupp'>
+    <div className='Signupp'> 
       <div className="Signup">
         <div className='signing'>
       <p id='sign' className='sign'>Sign in with Google</p>

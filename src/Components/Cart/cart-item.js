@@ -6,21 +6,16 @@ import carting from './carting';
 
 export const CartItem = (props) => {
     const {id, pcs, productName, productImage, productImage2, price} = props.data;
-const {totalCartAmount, totalCartPrice, removeFromCart, updateCartItemCount, addToCart, cartItems} = useContext(ShopContext);   
+const {totalCartAmount, totalCartPrice, cutFromCart, removeFromCart, updateCartItemCount, addToCart, cartItems} = useContext(ShopContext);   
 
- const cartprice = price * cartItems[id] 
+ const cartprice = cartItems[id] * price
  
- 
+
     return (
 
         <div className='cartt'>
             <div className='cartsection1'>
-            <div className='cart-row'>
-                <p className='item'>Item</p>
-                <p className='quantity'>Quantity</p>
-                <p className='amt'>Amount</p>
-                <p>{carting}</p>
-            </div>
+            
 
             <div>
         <div className='cart-item'>
@@ -40,24 +35,11 @@ const {totalCartAmount, totalCartPrice, removeFromCart, updateCartItemCount, add
     </div>
 
     <div className='ta'>
-        <p className='tot'>{cartprice}</p>
-        <p className='ex'>x</p>
+        <p className='tot'>#{cartprice}</p>
+        <button className='ex' onClick={() => cutFromCart(id)}> x</button>
     </div>
     </div>
     </div>
-    </div>
-
-    <div className='orderbord'>
-    <div>
-        Order summary
-    </div>
-    <p>Total item </p>
-
-    <p>SubTotal: {totalCartAmount} </p>
-
-    <p>delivery fee; 1000</p>
-
-    <p>Total Amount: </p>
     </div>
     </div>
   )

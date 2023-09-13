@@ -13,10 +13,11 @@ export const product = [
         productImage: coconut,
         productImage2: star
     },
+
     {
         id: 2,
         productName: "Farm Fresh Watermelon",
-        price: "#1500",
+        price: "1500",
         pcs: "/Pcs",
         productImage: watermelon,
         productImage2: star
@@ -24,7 +25,7 @@ export const product = [
     {
         id: 3,
         productName: "Farm Fresh Pineapple",
-        price: "#1300",
+        price: "1300",
         pcs: "/Pcs",
         productImage: pineapple,
         productImage2: star
@@ -32,7 +33,7 @@ export const product = [
     {
         id: 4,
         productName: "Farm Fresh Pawpaw",
-        price: "#1200",
+        price: "1200",
         pcs: "/Pcs",
         productImage: pawpaw,
         productImage2: star
@@ -40,7 +41,7 @@ export const product = [
     {
         id: 5,
         productName: "Farm Fresh Coconut",
-        price: "#1100",
+        price: "1100",
         pcs: "/Pcs",
         productImage: coconut,
         productImage2: star
@@ -48,7 +49,7 @@ export const product = [
     {
         id: 6,
         productName: "Farm Fresh Watermelon",
-        price: "#600",
+        price: "600",
         pcs: "/Pcs",
         productImage: watermelon,
         productImage2: star
@@ -56,7 +57,7 @@ export const product = [
     {
         id: 7,
         productName: "Farm Fresh Pineapple",
-        price: "#800",
+        price: "800",
         pcs: "/Pcs",
         productImage: pineapple,
         productImage2: star
@@ -64,10 +65,13 @@ export const product = [
     {
         id: 8,
         productName: "Farm Fresh Pawpaw",
-        price: "#500",
+        price: "500",
         pcs: "/Pcs",
         productImage: pawpaw,
         productImage2: star
     },
+
+
 ];
+
 

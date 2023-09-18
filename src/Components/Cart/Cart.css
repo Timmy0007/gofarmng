@@ -116,8 +116,48 @@
 }
 
 .ordersub{
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 20px;
     box-shadow: 0px 0px 2px rgba(17, 17, 17, 0.25);
     width: 96%;
     border-radius: 8px;
 }
 
+.toti, .totaa, .delii, .toa{
+    display: flex;
+}
+
+.toti{
+    margin-top: 20px;
+    }
+
+.toti2{
+    margin-left: 60%;
+}
+
+.tota2{
+    margin-left: 65%;
+}
+
+.deli-fee{
+    margin-left: 60%;
+}
+
+.toa2{
+    margin-left: 58%;
+}
+
+.checkoutp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    margin-left: 30%;
+    background: #149C08;
+    border-color: #149C08;
+    border-radius: 8px;
+    width: 55%;
+    height: 35px;
+}

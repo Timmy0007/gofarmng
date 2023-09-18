@@ -47,15 +47,28 @@ const Cart = () => {
        <div className='summary'>
            Order summary
        </div>
+
+       <div className='toti'>
        <p className='toti1'>Total item; </p>
-        <p className='toti2'>{totalItems}  </p>
-   
+        <p className='toti2'>{totalItems}  Items </p>
+        </div>
+
+        <div className='totaa'>
        <p className='tota1'>SubTotal:</p>
-        <p className='tota2'>{totalAmt} </p>
+        <p className='tota2'>#{totalAmt} </p>
+        </div>
+
+        <div className='delii'>
+       <p className='deli'>Delivery fee;</p>
+       <p className='deli-fee'> #1000</p>
+       </div>
    
-       <p>delivery fee; 1000</p>
-   
-       <p>Total Amount:#{totalAmt + 1000} </p>
+        <div className='toa'>
+       <p className='toa1'>Total Amount: </p>
+        <p className='toa2'>#{totalAmt + 1000} </p>
+        </div>
+
+        <button className='checkoutp'>Proceed to Checkout</button>
        </div>
        </div>
     :<div>Your Cart is Empty</div>  
